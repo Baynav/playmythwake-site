@@ -10,7 +10,7 @@
 const DOWNLOAD_URL = "https://github.com/Baynav/Mythwake/releases/latest/download/Launcher.zip";
 
 /* Optional small line under the Download button, for example "Version 14.4, 310 MB". */
-const DOWNLOAD_NOTE = "Launcher.zip, 34 MB";
+const DOWNLOAD_NOTE = "Windows 10 or 11 · 34 MB";
 
 /* The Discord invite link, for example "https://discord.gg/xxxxxxx". */
 const DISCORD_URL = "https://discord.gg/GswmKZXRVS";
