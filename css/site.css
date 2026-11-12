@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Mythwake";
-  src: url("../fonts/MythwakeBold.ttf") format("truetype");
+  src: url("../fonts/MythwakeBold.ttf?v=1.100") format("truetype");
   font-display: swap;
 }
 
