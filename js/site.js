@@ -128,7 +128,7 @@
       var h = el("h3");
       if (brief) {
         var link = el("a", null, post.title || "");
-        link.href = "news.html#" + art.id;
+        link.href = "news#" + art.id;
         h.appendChild(link);
       } else {
         h.textContent = post.title || "";
@@ -143,7 +143,7 @@
         body.textContent = "";
         body.appendChild(first);
         var more = el("a", "more", "Read more");
-        more.href = "news.html#" + art.id;
+        more.href = "news#" + art.id;
         body.appendChild(more);
       }
       art.appendChild(body);
@@ -176,7 +176,7 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var name = form.querySelector("input").value.trim();
-      location.href = "hiscores.html" + (name ? "?player=" + encodeURIComponent(name) : "");
+      location.href = "hiscores" + (name ? "?player=" + encodeURIComponent(name) : "");
     });
   });
 
