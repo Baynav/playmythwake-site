@@ -7,10 +7,10 @@
    Set it to the full link of the file players should get, for example
    "https://example.com/MythwakeSetup.exe". While it is "", the button on the
    Download page is switched off and says the download is coming soon. */
-const DOWNLOAD_URL = "";
+const DOWNLOAD_URL = "https://github.com/Baynav/Mythwake/releases/latest/download/Launcher.zip";
 
 /* Optional small line under the Download button, for example "Version 14.4, 310 MB". */
-const DOWNLOAD_NOTE = "v1.0";
+const DOWNLOAD_NOTE = "Launcher.zip, 34 MB";
 
 /* The Discord invite link, for example "https://discord.gg/xxxxxxx". */
 const DISCORD_URL = "https://discord.gg/GswmKZXRVS";
