@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mythwake - an online 2D RPG</title>
+<meta name="description" content="Mythwake is an online 2D RPG: one shared world, 14 skills, bosses and dungeons. Download it for Windows.">
+<meta property="og:title" content="Mythwake">
+<meta property="og:description" content="An online 2D RPG: one shared world, 14 skills, bosses and dungeons.">
+<meta property="og:image" content="https://playmythwake.com/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1d5559">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/MythwakeBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="frame">
+  <a class="banner" href="index.html" aria-label="Mythwake home">
+    <picture>
+      <source srcset="img/hero-960.webp 960w, img/hero-1920.webp 1920w" sizes="(max-width: 1000px) 100vw, 1000px" type="image/webp">
+      <img class="bg" src="img/hero-960.webp" alt="" width="960" height="540" fetchpriority="high">
+    </picture>
+    <img class="logo" src="img/logo.webp" alt="Mythwake" width="900" height="205">
+  </a>
+  <nav class="topnav" aria-label="Main">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="download.html">Download</a>
+    <a href="news.html">News</a>
+    <a href="hiscores.html">Hiscores</a>
+    <a href="support.html">Support</a>
+    <a href="terms.html">Rules</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+
+  <main id="main" class="cols">
+    <div>
+      <section class="box">
+        <div class="box-body playbox">
+          <div>
+            <h2>Welcome to Mythwake</h2>
+            <p>Mythwake is an online 2D RPG set on one island that every player shares. Train your skills, fight with
+              the weapon style you like, explore dungeons and take on the bosses, side by side with everyone else.</p>
+          </div>
+          <div class="cta">
+            <a class="btn btn-big" href="download.html">Download</a>
+            <p class="note muted">For Windows PC</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="box" aria-labelledby="news-h">
+        <h2 class="box-title" id="news-h">Latest news</h2>
+        <div class="box-body">
+          <div data-news="3" data-news-brief><p class="muted">Loading the news...</p></div>
+          <p class="small" style="margin-top:12px"><a href="news.html">All the news &raquo;</a></p>
+        </div>
+      </section>
+
+      <section class="box" aria-labelledby="about-h">
+        <h2 class="box-title" id="about-h">What is Mythwake?</h2>
+        <div class="box-body">
+          <ul class="features">
+            <li><b>One shared world</b>Towns, roads, rivers and wild lands on one island, with every player in it together.</li>
+            <li><b>14 skills</b>Fight, gather and craft: Melee, Archery, Sorcery, Prospecting, Logging, Angling, Forging, Alchemy and more.</li>
+            <li><b>Bosses</b>Big fights with moves of their own and rare drops worth the grind.</li>
+            <li><b>Dungeons</b>Each with its own layout, its own monsters and a boss room at the end.</li>
+            <li><b>Quests</b>Stories in every town, and a tutorial island to start you off.</li>
+            <li><b>Play together</b>Parties, guilds, friends, trading and the Grand Market.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="box" aria-labelledby="shots-h" data-shots-box hidden>
+        <h2 class="box-title" id="shots-h">Screenshots</h2>
+        <div class="box-body">
+          <div class="shots">
+            <div class="shot" data-shot="img/screenshots/shot-1.jpg" data-alt="Mythwake screenshot 1">[Placeholder: screenshot 1 &ndash; img/screenshots/shot-1.jpg, 1920&times;1080]</div>
+            <div class="shot" data-shot="img/screenshots/shot-2.jpg" data-alt="Mythwake screenshot 2">[Placeholder: screenshot 2 &ndash; img/screenshots/shot-2.jpg, 1920&times;1080]</div>
+            <div class="shot" data-shot="img/screenshots/shot-3.jpg" data-alt="Mythwake screenshot 3">[Placeholder: screenshot 3 &ndash; img/screenshots/shot-3.jpg, 1920&times;1080]</div>
+            <div class="shot" data-shot="img/screenshots/shot-4.jpg" data-alt="Mythwake screenshot 4">[Placeholder: screenshot 4 &ndash; img/screenshots/shot-4.jpg, 1920&times;1080]</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <aside class="side">
+      <section class="box">
+        <h2 class="box-title">Play now</h2>
+        <div class="box-body center">
+          <a class="btn btn-block" href="download.html">Download</a>
+          <p class="note muted">Mythwake is in alpha. A beta is on the way.</p>
+        </div>
+      </section>
+
+      <section class="box">
+        <h2 class="box-title">Hiscores</h2>
+        <div class="box-body">
+          <form data-hs-search>
+            <label class="skip" for="side-hs">Player name</label>
+            <input id="side-hs" type="search" placeholder="Player name" autocomplete="off">
+            <button class="btn btn-small" type="submit">Go</button>
+          </form>
+          <p class="note"><a href="hiscores.html">View the hiscores &raquo;</a></p>
+        </div>
+      </section>
+
+      <section class="box">
+        <h2 class="box-title">Community</h2>
+        <div class="box-body center">
+          <a class="btn btn-teal btn-block" data-discord>Join the Discord</a>
+          <p class="note" data-discord-note></p>
+        </div>
+      </section>
+
+      <section class="box">
+        <h2 class="box-title">Quick links</h2>
+        <div class="box-body">
+          <ul class="linklist">
+            <li><a href="download.html">Download &amp; install</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="hiscores.html">Hiscores</a></li>
+            <li><a href="terms.html">Rules of Mythwake</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="foot">
+    <nav aria-label="Footer">
+      <a href="news.html">News</a><a href="terms.html">Terms &amp; rules</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a>
+    </nav>
+    <p>Support: <span data-support-email></span></p>
+    <p>&copy; <span data-year>2026</span> Mythwake</p>
+  </footer>
+</div>
+<script src="js/config.js"></script>
+<script src="js/news.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
