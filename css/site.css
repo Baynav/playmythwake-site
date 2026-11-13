@@ -307,6 +307,11 @@ input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid 
 .hs-table tbody tr:nth-child(even) td { background: #f0e4c4; }
 .hs-table .num { text-align: right; font-variant-numeric: tabular-nums; }
 .hs-table th:not(:nth-child(2)) { text-align: right; }
+/* Rank, Level and XP shrink to their numbers; Name takes the rest */
+#hs-table-wrap .hs-table th:not(:nth-child(2)),
+#hs-table-wrap .hs-table td:not(:nth-child(2)) { width: 1%; white-space: nowrap; }
+#hs-table-wrap .hs-table th:nth-child(n+3),
+#hs-table-wrap .hs-table td:nth-child(n+3) { padding-left: 28px; }
 .hs-empty { padding: 22px 12px !important; text-align: center; color: var(--muted); font-weight: 600; }
 .hs-bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin: 12px 0 0; }
 .hs-forms { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 14px; }

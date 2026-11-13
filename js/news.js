@@ -18,8 +18,6 @@ window.MYTHWAKE_NEWS = [
     title: "Welcome to playmythwake.com",
     body: `
 Mythwake has a home on the web. This is where you'll find the download, the news, the hiscores and the rules of the game.
-
-Mythwake is in alpha right now, with a beta on the way. Come and say hello on Discord while we build it.
 `
   }
 ];
