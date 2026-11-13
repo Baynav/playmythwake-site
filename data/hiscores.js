@@ -1,6 +1,6 @@
 /* Mythwake hiscores - written by the game server (Server/src/Hiscores.cs). Do not edit by hand. */
 window.MYTHWAKE_HISCORES = {
-  updated: "2026-11-13 18:56 UTC",
+  updated: "2026-11-13 19:06 UTC",
   players: [
     { name: "Vedder96", skills: [[6, 3693], [4, 1687], [10, 14047], [10, 13881], [12, 21637], [3, 888], [2, 453], [8, 6800], [5, 2461], [4, 1535], [1, 0], [4, 1666], [3, 817], [8, 5777]] },
     { name: "Bay", skills: [[1, 226], [4, 1512], [11, 14505], [4, 1513], [11, 16517], [6, 3424], [3, 1149], [7, 4148], [6, 3389], [6, 3969], [2, 468], [4, 1789], [4, 1729], [6, 3731]] },
