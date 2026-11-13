@@ -261,10 +261,11 @@ input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid 
 
 /* ---------- Download ---------- */
 .steps { counter-reset: s; list-style: none; margin: 0; padding: 0; }
-.steps li { counter-increment: s; position: relative; padding: 0 0 12px 46px; min-height: 34px; }
+.steps li { counter-increment: s; position: relative; box-sizing: border-box; padding: 3px 0 0 48px; min-height: 34px; margin: 0 0 18px; }
+.steps li:last-child { margin-bottom: 0; }
 .steps li::before {
   content: counter(s);
-  position: absolute; left: 0; top: -2px;
+  position: absolute; left: 0; top: 0;
   width: 32px; height: 32px; line-height: 28px;
   text-align: center;
   font-family: var(--title);
