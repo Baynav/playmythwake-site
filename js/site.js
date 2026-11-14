@@ -21,23 +21,31 @@
      The game server writes data/hiscores.js every few minutes with "online: N", and it is published here about every
      ten minutes. Read as text (the file is never run on pages that don't need it); nothing shows if the count is
      missing or more than 30 minutes old - a server that is down doesn't leave a stale number up. */
+  /* v14.5 (Bay): during maintenance (data/status.js, pushed the moment it starts and ends by Deploy/site-status.ps1)
+     the pill says "Maintenance in progress" instead. */
   (function () {
     var banner = document.querySelector(".banner");
     if (!banner || !window.fetch) return;
-    fetch("data/hiscores.js?t=" + Math.floor(Date.now() / 60000), { cache: "no-store" })
-      .then(function (r) { return r.ok ? r.text() : ""; })
-      .then(function (js) {
-        var n = /\bonline:\s*(\d+)/.exec(js), u = /\bupdated:\s*"(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}) UTC"/.exec(js);
-        if (!n || !u) return;
-        var at = Date.UTC(+u[1], +u[2] - 1, +u[3], +u[4], +u[5]);
-        if (Date.now() - at > 30 * 60 * 1000) return;
-        var count = parseInt(n[1], 10);
-        var pill = el("span", "online-pill");
-        pill.appendChild(el("span", "online-dot"));
-        pill.appendChild(document.createTextNode(count === 1 ? "1 player online" : count.toLocaleString("en-GB") + " players online"));
-        banner.appendChild(pill);
-      })
-      .catch(function () {});
+    var t = "?t=" + Math.floor(Date.now() / 60000);
+    function text(url) {
+      return fetch(url + t, { cache: "no-store" }).then(function (r) { return r.ok ? r.text() : ""; }).catch(function () { return ""; });
+    }
+    function pill(label, cls) {
+      var p = el("span", "online-pill" + (cls ? " " + cls : ""));
+      p.appendChild(el("span", "online-dot"));
+      p.appendChild(document.createTextNode(label));
+      banner.appendChild(p);
+    }
+    Promise.all([text("data/status.js"), text("data/hiscores.js")]).then(function (got) {
+      if (/\bmaintenance:\s*true\b/.test(got[0])) { pill("Maintenance in progress", "is-maint"); return; }
+      var js = got[1];
+      var n = /\bonline:\s*(\d+)/.exec(js), u = /\bupdated:\s*"(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}) UTC"/.exec(js);
+      if (!n || !u) return;
+      var at = Date.UTC(+u[1], +u[2] - 1, +u[3], +u[4], +u[5]);
+      if (Date.now() - at > 30 * 60 * 1000) return;
+      var count = parseInt(n[1], 10);
+      pill(count === 1 ? "1 player online" : count.toLocaleString("en-GB") + " players online");
+    });
   })();
 
   /* ---- The real download button (Download page) ---- */

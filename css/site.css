@@ -95,6 +95,7 @@ h1, h2, h3 { font-family: var(--title); font-weight: normal; letter-spacing: .02
 }
 .banner .online-dot { width: 8px; height: 8px; border-radius: 50%; background: #5fd18a; box-shadow: 0 0 6px #5fd18a; }
 .page-banner .online-pill { bottom: 7px; font-size: .78rem; }
+.banner .online-pill.is-maint .online-dot { background: #f0b44c; box-shadow: 0 0 6px #f0b44c; }   /* maintenance: a gold dot */
 .page-banner .logo { width: min(420px, 74%); }
 
 /* ---------- Tab navigation ---------- */
