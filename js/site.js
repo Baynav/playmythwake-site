@@ -94,7 +94,7 @@
   /* A post body: blank lines split paragraphs, "## " starts a heading, "- " starts a bullet (an indented line
      carries on the bullet above), and <!-- notes --> are left out. */
   function renderBody(parent, body) {
-    var text = String(body || "").replace(/<!--[\s\S]*?-->/g, "").trim();
+    var text = String(body || "").replace(/[ \t]*<!--[\s\S]*?-->[ \t]*(\r?\n|$)/g, "").trim();
     var para = [], ul = null, li = null;
     function endPara() {
       if (para.length) { var p = el("p"); addText(p, para.join(" ")); parent.appendChild(p); }
