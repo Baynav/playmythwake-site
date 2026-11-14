@@ -27,6 +27,7 @@ shows when the game is under maintenance and has the new look.
 - **Stronger monsters pay more XP.** One-hitting a Lv 1 no longer pays like fighting something your own level.
 - **Quest markers.** A gold "?" on the minimap and world map shows where each quest goes next.
 - **Monsters fight back.** Packs hit much harder, and a monster that gives up the chase keeps its wounds.
+- **A new look.** A barber and a clothier have opened in Tolvadden, with eight new hairstyles.
 
 ## New
 - Quest markers on the minimap and world map: who to talk to next, and where to go or what to hunt. Hover one to
@@ -34,25 +35,35 @@ shows when the game is under maintenance and has the new look.
 - "Add to hotbar..." in the item menu for potions and food, to put them in slot 1, 2 or 3.
 - Chat is coloured by channel: local white, party green, guild purple, world yellow, whispers cyan, system messages
   a soft sand and level-ups gold.
-- The world map zooms: scroll to zoom in, drag to move around. Party members show on it as green X's.
+- The world map zooms: scroll to zoom in, drag to move around. On a controller, RT zooms in and LT zooms out.
+  Party members show on it as green X's.
+- The barber and the clothier in Tolvadden's Noble Quarter. The barber changes your hairstyle and hair colour; the
+  clothier changes your clothes, their colours and your skin tone. Your first visit to each is free, then it's 500
+  coins.
+- Eight new hairstyles: Textured Crop, Swept Quiff, Curtain Fringe and Tousled Shag; High Ponytail, Side Braid,
+  Wavy Lob and Twin Buns. Pick one when you make a character, or at the barber.
+- Zoom the camera out: scroll the mouse wheel, or lean the right stick gently up or down on a controller.
 
 ## Improvements
 - Without a target locked, attacks go to the nearest monster, and a shot already lined up on one stays on it.
 - The game runs smoother and uses much less CPU.
 - Arrow keys and Enter no longer move through menus, so they stop getting in the way. A controller still steers
   menus.
+- News in the launcher and on the title screen shows each post on its own, with its date.
 
 ## Balance
 - Monsters in a pack no longer wait for each other between hits.
 - Monsters chase you about 50% farther. When they give up, they walk home keeping their wounds and heal slowly
   there, instead of healing to full straight away. Bosses still reset.
 - Dragging the same monster away from its home twice within a minute heals it fully, so kiting it doesn't work.
+- Arrows and kunai stack without limit (was 1,000).
 
 ## Fixes
 - Fixed bats and other swooping or charging monsters standing still when you were right on top of them.
 - Fixed town place names popping up for the wrong building.
 - Pressing Alt while the bank, a shop or a conversation is open no longer starts the conversation over again.
 - The Skills window opens on the overview again, not on the last skill you looked at.
+- Fixed your own name tag (Alpha Tester and the others) not showing to you until you put it on again.
 `
   },
   {
