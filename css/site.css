@@ -220,6 +220,13 @@ h1, h2, h3 { font-family: var(--title); font-weight: normal; letter-spacing: .02
   font-size: .78rem; font-weight: 700; color: var(--ink);
 }
 .post-body p { margin: 0 0 10px; }
+.post-body h4 {
+  margin: 16px 0 6px; padding-bottom: 2px;
+  font-family: var(--title); font-weight: normal; font-size: 1.12rem; letter-spacing: .02em;
+  color: var(--teal); border-bottom: 2px solid var(--parch3);
+}
+.post-body ul { margin: 0 0 10px; padding-left: 22px; }
+.post-body li { margin: 0 0 5px; }
 .post-body > :last-child { margin-bottom: 0; }
 .more { display: inline-block; margin-top: 2px; }
 

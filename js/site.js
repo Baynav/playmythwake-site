@@ -71,8 +71,8 @@
     if (!m) return iso || "";
     return Number(m[3]) + " " + MONTHS[Number(m[2]) - 1] + " " + m[1];
   }
-  /* Text with https:// links made clickable. Everything is added as text, never as HTML. */
-  function addText(parent, text) {
+  /* Text with https:// links made clickable and **bold** made bold. Everything is added as text, never as HTML. */
+  function addLinks(parent, text) {
     var parts = text.split(/(https?:\/\/[^\s]*[^\s.,;:!?)])/);
     parts.forEach(function (part, i) {
       if (i % 2) {
@@ -85,24 +85,47 @@
       }
     });
   }
+  function addText(parent, text) {
+    text.split(/\*\*(.+?)\*\*/).forEach(function (part, i) {
+      if (i % 2) { var b = el("b"); addLinks(b, part); parent.appendChild(b); }
+      else if (part) addLinks(parent, part);
+    });
+  }
+  /* A post body: blank lines split paragraphs, "## " starts a heading, "- " starts a bullet (an indented line
+     carries on the bullet above), and <!-- notes --> are left out. */
   function renderBody(parent, body) {
-    String(body || "").trim().split(/\n\s*\n/).forEach(function (block) {
-      var lines = block.split("\n").map(function (l) { return l.trim(); }).filter(Boolean);
-      if (!lines.length) return;
-      if (lines.every(function (l) { return l.indexOf("- ") === 0; })) {
-        var ul = el("ul");
-        lines.forEach(function (l) {
-          var li = el("li");
-          addText(li, l.slice(2));
-          ul.appendChild(li);
-        });
-        parent.appendChild(ul);
+    var text = String(body || "").replace(/<!--[\s\S]*?-->/g, "").trim();
+    var para = [], ul = null, li = null;
+    function endPara() {
+      if (para.length) { var p = el("p"); addText(p, para.join(" ")); parent.appendChild(p); }
+      para = [];
+    }
+    function endList() { ul = null; li = null; }
+    text.split(/\r?\n/).forEach(function (raw) {
+      var line = raw.trim();
+      if (!line) { endPara(); endList(); return; }
+      if (line.indexOf("## ") === 0) {
+        endPara(); endList();
+        var h = el("h4");
+        addText(h, line.slice(3));
+        parent.appendChild(h);
+      } else if (line.indexOf("- ") === 0) {
+        endPara();
+        if (!ul) { ul = el("ul"); parent.appendChild(ul); }
+        li = el("li");
+        li._text = line.slice(2);
+        ul.appendChild(li);
+        addText(li, li._text);
+      } else if (li && /^\s/.test(raw)) {
+        li._text += " " + line;
+        li.textContent = "";
+        addText(li, li._text);
       } else {
-        var p = el("p");
-        addText(p, lines.join(" "));
-        parent.appendChild(p);
+        endList();
+        para.push(line);
       }
     });
+    endPara();
   }
   function postId(post) {
     return "post-" + (post.date || "") + "-" +
