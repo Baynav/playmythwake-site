@@ -82,6 +82,19 @@ h1, h2, h3 { font-family: var(--title); font-weight: normal; letter-spacing: .02
   filter: drop-shadow(0 4px 0 rgba(26, 18, 12, .85)) drop-shadow(0 0 18px rgba(0, 0, 0, .45));
 }
 .page-banner { height: 150px; }
+/* Players online, under the logo's gem (js/site.js) */
+.banner .online-pill {
+  position: absolute; z-index: 1;
+  left: 50%; bottom: 12px; transform: translateX(-50%);
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 3px 12px 3px 10px;
+  border-radius: 999px;
+  background: rgba(14, 26, 30, .72);
+  border: 1px solid rgba(240, 196, 110, .55);
+  color: #f6e4b4; font-size: .85rem; font-weight: 600; letter-spacing: .02em; white-space: nowrap;
+}
+.banner .online-dot { width: 8px; height: 8px; border-radius: 50%; background: #5fd18a; box-shadow: 0 0 6px #5fd18a; }
+.page-banner .online-pill { bottom: 7px; font-size: .78rem; }
 .page-banner .logo { width: min(420px, 74%); }
 
 /* ---------- Tab navigation ---------- */
