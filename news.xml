@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mythwake News</title>
+    <link>https://playmythwake.com/news</link>
+    <description>News and patch notes for Mythwake, an online 2D RPG.</description>
+    <language>en</language>
+    <atom:link href="https://playmythwake.com/news.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Nov 2026 12:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://playmythwake.com/img/apple-touch-icon.png</url>
+      <title>Mythwake News</title>
+      <link>https://playmythwake.com/news</link>
+    </image>
+    <item>
+      <title>Monsters Fight Back</title>
+      <link>https://playmythwake.com/news#post-2026-11-14-monsters-fight-back</link>
+      <guid isPermaLink="true">https://playmythwake.com/news#post-2026-11-14-monsters-fight-back</guid>
+      <pubDate>Sat, 14 Nov 2026 12:00:00 +0000</pubDate>
+      <category>Patch notes</category>
+      <description>&lt;p&gt;Monsters are harder to cheese and quests show up on your maps. Thanks to everyone who reported what felt off. Keep the reports coming through Menu &amp;gt; Report a bug.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;There&amp;#39;s a new launcher.&lt;/strong&gt; Download it from &lt;a href="https://playmythwake.com/download"&gt;https://playmythwake.com/download&lt;/a&gt; and use it in place of the old one: it shows when the game is under maintenance and has the new look.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Highlights&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Stronger monsters pay more XP.&lt;/strong&gt; One-hitting a Lv 1 no longer pays like fighting something your own level.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Quest markers.&lt;/strong&gt; A gold &amp;quot;?&amp;quot; on the minimap and world map shows where each quest goes next.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Monsters fight back.&lt;/strong&gt; Packs hit much harder, and a monster that gives up the chase keeps its wounds.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;A new look.&lt;/strong&gt; A barber and a clothier have opened in Tolvadden, with eight new hairstyles.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Fish and feast.&lt;/strong&gt; Fishing has its own net and rod animations, and animals drop meat to cook: six new foods from Cooking 1 to 30.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Crafting is a real climb.&lt;/strong&gt; Forging, Woodworking, Tailoring and Alchemy pay by the materials you use and take several times longer to level.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://playmythwake.com/news#post-2026-11-14-monsters-fight-back"&gt;Read the full notes&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Welcome to playmythwake.com</title>
+      <link>https://playmythwake.com/news#post-2026-11-12-welcome-to-playmythwake-com</link>
+      <guid isPermaLink="true">https://playmythwake.com/news#post-2026-11-12-welcome-to-playmythwake-com</guid>
+      <pubDate>Thu, 12 Nov 2026 12:00:00 +0000</pubDate>
+      <category>Website</category>
+      <description>&lt;p&gt;Mythwake has a home on the web. This is where you&amp;#39;ll find the download, the news, the hiscores and the rules of the game.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
