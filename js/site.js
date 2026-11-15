@@ -162,47 +162,95 @@
     return "post-" + (post.date || "") + "-" +
       String(post.title || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   }
+  /* The short version of a post for lists: the intro and the Highlights (the rest is on the post's own page). */
+  function summaryOf(body) {
+    var text = String(body || "").replace(/[ \t]*<!--[\s\S]*?-->[ \t]*(\r?\n|$)/g, "").trim();
+    var parts = ("\n" + text).split(/\r?\n## /);
+    var out = parts[0].trim();
+    for (var i = 1; i < parts.length; i++) {
+      if (/^Highlights\s*(\r?\n|$)/.test(parts[i])) { out += "\n\n## " + parts[i].trim(); break; }
+    }
+    return { text: out, more: parts.length > 1 };
+  }
+  /* One post as an <article>. mode: "full" (its own page), "card" (News list: intro + Highlights + Read more),
+     "brief" (Home: first paragraph + Read more). */
+  function postCard(post, mode) {
+    var id = postId(post);
+    var art = el("article", "post");
+    art.id = id;
+    var meta = el("p", "post-meta");
+    var time = el("time", null, niceDate(post.date));
+    time.setAttribute("datetime", post.date || "");
+    meta.appendChild(time);
+    if (post.category) meta.appendChild(el("span", "post-cat", post.category));
+    var h = el(mode === "full" ? "h2" : "h3");
+    if (mode === "full") {
+      h.className = "post-title";
+      h.textContent = post.title || "";
+    } else {
+      var link = el("a", null, post.title || "");
+      link.href = "news#" + id;
+      h.appendChild(link);
+    }
+    art.appendChild(h);
+    art.appendChild(meta);
+    var body = el("div", "post-body");
+    var sum = summaryOf(post.body);
+    renderBody(body, mode === "card" ? sum.text : post.body);
+    if (mode === "brief" && body.firstChild) {
+      var first = body.firstChild;
+      body.textContent = "";
+      body.appendChild(first);
+    }
+    if (mode !== "full" && (sum.more || mode === "brief")) {
+      var more = el("a", "more", "Read more");
+      more.href = "news#" + id;
+      more.setAttribute("aria-label", "Read more: " + (post.title || ""));
+      body.appendChild(more);
+    }
+    art.appendChild(body);
+    return art;
+  }
+  var siteTitle = document.title;
   each("[data-news]", function (box) {
     var posts = (window.MYTHWAKE_NEWS || []).slice();
     var limit = Number(box.getAttribute("data-news")) || posts.length;
     var brief = box.hasAttribute("data-news-brief");
-    box.textContent = "";
-    if (!posts.length) {
-      box.appendChild(el("p", "muted", "No news yet. Check back soon."));
-      return;
-    }
-    posts.slice(0, limit).forEach(function (post) {
-      var art = el("article", "post");
-      art.id = postId(post);
-      var meta = el("p", "post-meta");
-      var time = el("time", null, niceDate(post.date));
-      time.setAttribute("datetime", post.date || "");
-      meta.appendChild(time);
-      if (post.category) meta.appendChild(el("span", "post-cat", post.category));
-      var h = el("h3");
+    function show() {
+      box.textContent = "";
+      if (!posts.length) {
+        box.appendChild(el("p", "muted", "No news yet. Check back soon."));
+        return;
+      }
       if (brief) {
-        var link = el("a", null, post.title || "");
-        link.href = "news#" + art.id;
-        h.appendChild(link);
+        posts.slice(0, limit).forEach(function (post) { box.appendChild(postCard(post, "brief")); });
+        return;
+      }
+      /* News page: news#post-<date>-<title> (or news?post=<id>) shows that one post in full; otherwise the list. */
+      var want = decodeURIComponent((location.hash || "").slice(1)) ||
+        (/[?&]post=([^&#]+)/.exec(location.search) || [])[1] || "";
+      var one = null;
+      if (want) posts.forEach(function (p) { if (!one && postId(p) === want) one = p; });
+      if (one) {
+        var back = el("p", "post-back");
+        var a = el("a", null, "\u2190 Back to all news");
+        a.href = "news";
+        back.appendChild(a);
+        box.appendChild(back);
+        box.appendChild(postCard(one, "full"));
+        var back2 = back.cloneNode(true);
+        back2.className = "post-back post-back-end";
+        box.appendChild(back2);
+        document.title = (one.title || "News") + " - Mythwake";
+        var top = box.closest(".box") || box;
+        if (top.scrollIntoView) top.scrollIntoView();
       } else {
-        h.textContent = post.title || "";
+        posts.slice(0, limit).forEach(function (post) { box.appendChild(postCard(post, "card")); });
+        document.title = siteTitle;
       }
-      art.appendChild(h);
-      art.appendChild(meta);
-      var body = el("div", "post-body");
-      renderBody(body, post.body);
-      if (brief && body.firstChild) {
-        /* Home page: the first paragraph and a "Read more" link. */
-        var first = body.firstChild;
-        body.textContent = "";
-        body.appendChild(first);
-        var more = el("a", "more", "Read more");
-        more.href = "news#" + art.id;
-        body.appendChild(more);
-      }
-      art.appendChild(body);
-      box.appendChild(art);
-    });
+    }
+    show();
+    if (!brief) window.addEventListener("hashchange", show);
   });
 
   /* ---- Screenshots: a slot shows its picture once the file exists. Slots with no file are
