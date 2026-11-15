@@ -6,12 +6,20 @@
     <description>News and patch notes for Mythwake, an online 2D RPG.</description>
     <language>en</language>
     <atom:link href="https://playmythwake.com/news.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sat, 14 Nov 2026 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 12:00:00 +0000</lastBuildDate>
     <image>
       <url>https://playmythwake.com/img/apple-touch-icon.png</url>
       <title>Mythwake News</title>
       <link>https://playmythwake.com/news</link>
     </image>
+    <item>
+      <title>Calmer Packs, Free Bolts</title>
+      <link>https://playmythwake.com/news#post-2026-11-15-calmer-packs-free-bolts</link>
+      <guid isPermaLink="true">https://playmythwake.com/news#post-2026-11-15-calmer-packs-free-bolts</guid>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 +0000</pubDate>
+      <category>Patch notes</category>
+      <description>&lt;p&gt;Mages&amp;#39; basic bolts are free, packs no longer all come at you at once, and crafting materials come from where you&amp;#39;d expect. The game closes for a short while during the update; the launcher downloads it as soon as it opens again. Thanks for every report: keep them coming through Menu &amp;gt; Report a bug or the Discord.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Highlights&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Free basic bolts.&lt;/strong&gt; A staff&amp;#39;s or wand&amp;#39;s basic bolt costs no MP (was 1).&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Packs no longer all come at once.&lt;/strong&gt; Monsters stand in loners and small groups, and only a few of a pack notice you as you walk past: 1 of a group of 3 (was all 3). Hit one standing in a group and its packmates join in; a loner fights alone.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;See a monster&amp;#39;s level before you fight.&lt;/strong&gt; Monsters near you show their level and name, coloured from grey (far below you) through green, yellow and orange to red (far above). Your target&amp;#39;s name turns purple.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Bosses can&amp;#39;t be fought from safety.&lt;/strong&gt; Hit a boss from a spot it can&amp;#39;t reach and it leaps next to you. Where it can&amp;#39;t land, your hits miss and it heals until you come out.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;New sources for cloth.&lt;/strong&gt; Scarecrows on Scarecrow Hill near Wheatlow and in Pellow&amp;#39;s Practice Yard drop 1-2 Flax, woven into Linen Cloth. Downs Sheep on Hollin Downs drop a Fleece, woven into Wool Cloth, and Raw Mutton to cook.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Crafting starts quicker.&lt;/strong&gt; The first levels of Forging, Woodworking and Tailoring come faster: a Copper bar pays 9 Forging XP (was 6), so a Copper Platebody gives 45 XP (was 30). Every piece of a tier can be made by the level you can wear it: every Iron piece by Forging 20 (the Iron Platebody was 29).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://playmythwake.com/news#post-2026-11-15-calmer-packs-free-bolts"&gt;Read the full notes&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Monsters Fight Back</title>
       <link>https://playmythwake.com/news#post-2026-11-14-monsters-fight-back</link>

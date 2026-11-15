@@ -13,6 +13,50 @@
 
 window.MYTHWAKE_NEWS = [
   {
+    date: "2026-11-15",
+    category: "Patch notes",
+    title: "Calmer Packs, Free Bolts",
+    body: `
+Mages' basic bolts are free, packs no longer all come at you at once, and crafting materials come
+from where you'd expect. The game closes for a short while during the update; the launcher downloads it as soon as it
+opens again. Thanks for every report: keep them coming through Menu > Report a bug or the Discord.
+
+## Highlights
+- **Free basic bolts.** A staff's or wand's basic bolt costs no MP (was 1).
+- **Packs no longer all come at once.** Monsters stand in loners and small groups, and only a few of a pack notice you
+  as you walk past: 1 of a group of 3 (was all 3). Hit one standing in a group and its packmates join in; a loner
+  fights alone.
+- **See a monster's level before you fight.** Monsters near you show their level and name, coloured from grey (far
+  below you) through green, yellow and orange to red (far above). Your target's name turns purple.
+- **Bosses can't be fought from safety.** Hit a boss from a spot it can't reach and it leaps next to you. Where it
+  can't land, your hits miss and it heals until you come out.
+- **New sources for cloth.** Scarecrows on Scarecrow Hill near Wheatlow and in Pellow's Practice Yard drop 1-2 Flax,
+  woven into Linen Cloth. Downs Sheep on Hollin Downs drop a Fleece, woven into Wool Cloth, and Raw Mutton to cook.
+- **Crafting starts quicker.** The first levels of Forging, Woodworking and Tailoring come faster: a Copper bar pays 9
+  Forging XP (was 6), so a Copper Platebody gives 45 XP (was 30). Every piece of a tier can be made by the level you
+  can wear it: every Iron piece by Forging 20 (the Iron Platebody was 29).
+
+## Improvements
+- The dodge roll goes any way you push: all 8 directions on the keyboard and any angle on a controller's stick. On PC,
+  a roll from standing still goes toward the mouse.
+- Shops have a Buy X button: type how many, up to what you can afford.
+- Clicking "Enter to chat" under the chat opens it, ready to type.
+- With a controller, the mouse cursor hides and nothing under it lights up; move the mouse or press a key and it comes
+  back.
+- Claw throws use only the claw arm; the other arm stays down.
+
+## Balance
+- A bow or claw fires ammo of its own tier or lower: Copper weapons can't fire Iron, Iron weapons
+  fire Iron, Copper and Training ammo. Training weapons can fire Copper too.
+
+## Fixes
+- Fixed the chat box sometimes not taking your typing until you clicked it a few times.
+- Fixed the D-pad doing nothing in the bag until you moved the pointer over it, and losing its place mid-move.
+- Fixed Innkeeper Gerens standing outside The Leaning Pig; he's inside behind the tables now.
+- Fixed the cellar under Pellow showing as "Pellow Cellars"; it's Old Tom's Cellar everywhere.
+`
+  },
+  {
     date: "2026-11-14",
     category: "Patch notes",
     title: "Monsters Fight Back",
