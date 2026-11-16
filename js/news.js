@@ -16,6 +16,7 @@ window.MYTHWAKE_NEWS = [
     date: "2026-11-17",
     category: "Patch notes",
     title: "Microsoft Store Launch! - Bosses Bite Back",
+    published: "2026-11-16T21:31:55Z",
     body: `
 **Mythwake is on the Microsoft Store!** Download it straight from the Store, no launcher needed, and the Store keeps
 it up to date for you: https://apps.microsoft.com/detail/9NCS6GLQ56GV (every way to play: https://playmythwake.com/download).
