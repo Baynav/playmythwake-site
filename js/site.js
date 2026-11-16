@@ -67,6 +67,10 @@
 
   /* ---- Microsoft Store badges (the link is also in the page, for browsers without JavaScript) ---- */
   each("[data-store]", function (a) { if (cfg.storeUrl) a.href = cfg.storeUrl; });
+  /* "Leave a review": on Windows the Store app's review dialog opens; elsewhere the link stays the web listing. */
+  if (cfg.storeReviewApp && /Windows/i.test(navigator.userAgent || "")) {
+    each("[data-store-review]", function (a) { a.href = cfg.storeReviewApp; });
+  }
 
   /* ---- Discord links ---- */
   each("[data-discord]", function (a) {

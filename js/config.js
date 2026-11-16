@@ -7,6 +7,10 @@
    (?mode=direct opens the Store app on Windows; elsewhere it shows the web listing.) */
 const STORE_URL = "https://apps.microsoft.com/detail/9NCS6GLQ56GV?mode=direct";
 
+/* "Leave a review on the Microsoft Store": on Windows this opens the Store app's review dialog; other systems keep
+   the link in the page (the web listing). */
+const STORE_REVIEW_APP = "ms-windows-store://review/?ProductId=9NCS6GLQ56GV";
+
 /* The launcher download (the second option, under the Store badge on the Download page).
    Set it to the full link of the file players should get, for example
    "https://example.com/MythwakeSetup.exe". While it is "", the button on the
@@ -24,6 +28,7 @@ const SUPPORT_EMAIL = "baynav@playmythwake.com";
 
 window.MYTHWAKE = {
   storeUrl: STORE_URL,
+  storeReviewApp: STORE_REVIEW_APP,
   downloadUrl: DOWNLOAD_URL,
   downloadNote: DOWNLOAD_NOTE,
   discordUrl: DISCORD_URL,
