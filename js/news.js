@@ -13,6 +13,55 @@
 
 window.MYTHWAKE_NEWS = [
   {
+    date: "2026-11-17",
+    category: "Patch notes",
+    title: "Microsoft Store Launch! - Bosses Bite Back",
+    body: `
+**Mythwake is on the Microsoft Store!** Download it straight from the Store, no launcher needed, and the Store keeps
+it up to date for you: https://apps.microsoft.com/detail/9NCS6GLQ56GV (every way to play: https://playmythwake.com/download).
+Already using the launcher? It keeps working as before.
+
+Bosses hit harder and smarter, boss drops are worth chasing, and armour fits better. The game closes for a minute during
+the update, with a countdown first; Store players get it through the Store, and the launcher downloads only what
+changed. Thanks for every report: keep them coming through Menu > Report a bug or the Discord.
+
+## Highlights
+- **Bosses hit like their level.** The higher the boss, the harder it hits.
+- **No more frozen bosses.** A boss that can't reach you walks round what's in the way, leaps to you, or gives up and
+  walks home.
+- **Boss drops build a set.** Bosses drop helms, gloves, boots, rings and earrings any combat style can wear, plus their
+  own weapons, with new pieces to find.
+- **Armour fits better.** Dozens of pieces are redrawn or refitted.
+- **A tidier skill guide.** Armour sets are one row each, and gear says where it comes from.
+
+## Improvements
+- Skill guide entries say where an item comes from: made, sold, a quest, a boss or a monster.
+- Controller: the D-pad scrolls long lists, and the left stick scrolls any window.
+
+## Balance
+- Every boss hits on one scale by level. Old Snapper, the Slag Giant and the Storm Titan hit harder, and their big
+  attacks hurt more; Old Gnasher hits a little softer.
+- No single hit from Old Gnasher, Chief Grubnose or the Bog King takes more than 40% of your health.
+- Every monster hits on one scale by level: bats, treants and blobs hit harder, and spiders, wolves, hounds and lizards
+  hit a little softer.
+- The Bog King and Old Snapper drop a rare a little more often (1 in 18, was 1 in 24; 1 in 21, was 1 in 28).
+- The Slagforged Plate and the Goblin Chief's Headdress no longer drop. If you have one, you keep it.
+- Flax, Fleece and Spider Silk take a bag slot each, like ores, logs and hides (the bank still stacks them). Any you
+  carry in a stack move to your bank when you log in.
+
+## Fixes
+- Fixed bosses standing still when they couldn't reach you, such as Old Gnasher across the cellar pond.
+- Fixed being pulled straight back into a dungeon or house when you kept walking after leaving it.
+- Fixed a controller pulling you back through a portal right after you came out of it.
+- Fixed goblins, skeletons and bandits only landing the first swing of their two-hit combo.
+- Fixed Death Echoes' quick flurries only landing their first hit.
+- Fixed armour gaps: dark patches under plate sleeves and belts, bare ankles above boots, rough sleeve edges on starter
+  gear, the Ratskin Cap's strap across the mouth, the Morrowveil Slippers' ribbon tails and the Kestrel Boots' cuff.
+- Fixed quest text that still named old crafting materials ("Silk for the Wards", "The Scarecrow's Coat").
+- Fixed bows called Longbow and Shortbow: every bow is a Bow now.
+`
+  },
+  {
     date: "2026-11-15",
     category: "Patch notes",
     title: "Calmer Packs, Free Bolts",
