@@ -65,6 +65,9 @@
     else if (cfg.downloadNote) p.textContent = cfg.downloadNote;
   });
 
+  /* ---- Microsoft Store badges (the link is also in the page, for browsers without JavaScript) ---- */
+  each("[data-store]", function (a) { if (cfg.storeUrl) a.href = cfg.storeUrl; });
+
   /* ---- Discord links ---- */
   each("[data-discord]", function (a) {
     if (cfg.discordUrl) {
