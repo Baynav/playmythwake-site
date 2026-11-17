@@ -21,7 +21,7 @@ const DOWNLOAD_URL = "files/Launcher.zip";
 const DOWNLOAD_NOTE = "Windows 10 or 11 · 34 MB";
 
 /* The Discord invite link, for example "https://discord.gg/xxxxxxx". */
-const DISCORD_URL = "https://discord.gg/GswmKZXRVS";
+const DISCORD_URL = "https://discord.gg/DPtT3ApVq8";
 
 /* The support email address shown on the Support page and in the footer. */
 const SUPPORT_EMAIL = "baynav@playmythwake.com";
