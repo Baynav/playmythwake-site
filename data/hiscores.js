@@ -1,6 +1,6 @@
 /* Mythwake hiscores - written by the game server (Server/src/Hiscores.cs). Do not edit by hand. */
 window.MYTHWAKE_HISCORES = {
-  updated: "2026-11-17 21:29 UTC",
+  updated: "2026-11-17 21:39 UTC",
   online: 1,
   players: [
     { name: "Vedder96", skills: [[17, 28116], [20, 48581], [20, 48603], [15, 17025], [20, 50855], [11, 6199], [6, 977], [16, 22100], [11, 5543], [8, 1990], [5, 648], [13, 9641], [7, 1469], [14, 13928]] },
