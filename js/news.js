@@ -13,6 +13,71 @@
 
 window.MYTHWAKE_NEWS = [
   {
+    date: "2026-11-18",
+    category: "Patch notes",
+    title: "Loot Bags - Follow Me, Party Play and Smoother Chat",
+    published: "2026-11-18T18:19:41Z",
+    body: `
+Every kill now drops one loot bag only you can see, follow your friends across the map, a new face in Guild Row, a bigger reward for fighting together, and a lot of
+polish: chat that behaves, fishing that tells you when the fish move, and smoother menus on a controller. The game
+closes for a minute during the update, with a countdown first; Microsoft Store players get it through the Store, and
+the launcher downloads only what changed. Thanks for every report: keep them coming through Menu > Report a bug or the
+Discord.
+
+## Highlights
+- **Loot bags.** Each kill drops one bag that only you (or your party) can see. Open all your nearby bags at once in
+  one small window, take what you want or everything, and keep fighting while it's open.
+- **Follow a player.** Right-click a player and pick Follow to walk after them.
+- **Registrar Kerensa in Guild Row.** Found a guild, manage yours, or ask what guilds are for.
+- **Train near your level.** Monsters pay for their health, so the best XP is on monsters close to your level.
+- **Party play pays more.** Fighting together gives a bigger XP bonus to everyone who's pitching in.
+- **Chat that gets out of your way.** It lets go of the keyboard after you send, and no longer sticks on a whisper.
+
+## New
+- Loot bags: each monster you kill drops one bag that only you and your party see. Press Alt by your bags (RB on a
+  controller) to open one small loot window with everything from all your bags nearby, stacked; click an item to take
+  it, or hold Alt (hold RB) to take everything. Bags you fill while it's open join the list, and you can keep fighting.
+  An unclaimed bag bursts after 60 seconds: its items lie on the ground for anyone for 30 seconds more (was 15
+  seconds private, 2 minutes in all). Items you drop yourself still stay 2 minutes.
+- Party loot setting (party leader, in the Party window): Free for all (the default), Killer only, or Take turns.
+- Controller: hold LB near a player to open their menu (Follow, Trade, Invite, Whisper, Add friend, Report); a tap of LB
+  still changes stance.
+- Follow: right-click a player (or open their menu on a controller) and pick Follow. You walk after them until you move
+  yourself, start talking to someone, or they leave sight or the map. A "Following" line with an X shows while it's on.
+- Registrar Kerensa stands in the Guild Row hall in Tolvadden. She can found a guild (100,000 coins), open your guild's
+  management if you lead one, and explain what guilds are for.
+- Settings > Delete account opens the website's page on how to delete your account.
+
+## Balance
+- Monsters now pay XP for how much health they have, at your level: the best XP is on monsters near your level, and
+  farming monsters far below you pays less. The time to each level stays the same, and nothing changes for your levels
+  or the hiscores.
+- Old Gnasher pays less once you've outgrown him: from 4 levels above him his XP fades a little each level - time to move
+  on.
+- The party XP bonus counts only members who are fighting together: +5% for each party member who has hit a monster or
+  healed in the last 30 seconds, up to +15% (was +10% for each extra member nearby, fighting or not). Two fighting get
+  +10%, three or four +15%. Members who are nearby but idle still share the XP.
+
+## Improvements
+- Controller: your character no longer walks while a window or menu is open. The left stick moves the pointer (and the
+  world map's cursor), and the right stick scrolls (the bank row by row).
+- Controller: LT / RT switch the chat channel while the chat is open.
+- The Change stance button in the bottom-left is bigger and shows your stance in its colour (the "Level" text there is
+  gone; your combat level still shows under your character and in Skills).
+
+## Fixes
+- Fixed fishing stopping with no message when the fish moved to another spot: you're now told "The fish have moved on.
+  Look for ripples nearby." A fishing spot with no other spot nearby never runs out.
+- Fixed chat staying in a whisper to the last person you messaged from the Social window every time you opened it.
+- Fixed the chat box keeping hold of the keyboard after you sent a message: movement and hotkeys work straight away
+  again (Enter opens the chat).
+- Fixed flowers, mushrooms and a bush growing in the water near Pellow, crates floating in the Old Sewers' water, and a
+  group of Crab Knights standing in the water in The Depths.
+- Fixed new characters and guilds being able to take names that look like staff, such as "GM" or "Mod" names. Existing
+  names are kept.
+`
+  },
+  {
     date: "2026-11-17",
     category: "Patch notes",
     title: "Microsoft Store Launch! - Bosses Bite Back",

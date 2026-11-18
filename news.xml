@@ -6,12 +6,20 @@
     <description>News and patch notes for Mythwake, an online 2D RPG.</description>
     <language>en</language>
     <atom:link href="https://playmythwake.com/news.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Mon, 16 Nov 2026 21:31:55 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 18:19:41 +0000</lastBuildDate>
     <image>
       <url>https://playmythwake.com/img/apple-touch-icon.png</url>
       <title>Mythwake News</title>
       <link>https://playmythwake.com/news</link>
     </image>
+    <item>
+      <title>Loot Bags - Follow Me, Party Play and Smoother Chat</title>
+      <link>https://playmythwake.com/news#post-2026-11-18-loot-bags-follow-me-party-play-and-smoother-chat</link>
+      <guid isPermaLink="true">https://playmythwake.com/news#post-2026-11-18-loot-bags-follow-me-party-play-and-smoother-chat</guid>
+      <pubDate>Wed, 18 Nov 2026 18:19:41 +0000</pubDate>
+      <category>Patch notes</category>
+      <description>&lt;p&gt;Every kill now drops one loot bag only you can see, follow your friends across the map, a new face in Guild Row, a bigger reward for fighting together, and a lot of polish: chat that behaves, fishing that tells you when the fish move, and smoother menus on a controller. The game closes for a minute during the update, with a countdown first; Microsoft Store players get it through the Store, and the launcher downloads only what changed. Thanks for every report: keep them coming through Menu &amp;gt; Report a bug or the Discord.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Highlights&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Loot bags.&lt;/strong&gt; Each kill drops one bag that only you (or your party) can see. Open all your nearby bags at once in one small window, take what you want or everything, and keep fighting while it&amp;#39;s open.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Follow a player.&lt;/strong&gt; Right-click a player and pick Follow to walk after them.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Registrar Kerensa in Guild Row.&lt;/strong&gt; Found a guild, manage yours, or ask what guilds are for.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Train near your level.&lt;/strong&gt; Monsters pay for their health, so the best XP is on monsters close to your level.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Party play pays more.&lt;/strong&gt; Fighting together gives a bigger XP bonus to everyone who&amp;#39;s pitching in.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Chat that gets out of your way.&lt;/strong&gt; It lets go of the keyboard after you send, and no longer sticks on a whisper.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://playmythwake.com/news#post-2026-11-18-loot-bags-follow-me-party-play-and-smoother-chat"&gt;Read the full notes&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Microsoft Store Launch! - Bosses Bite Back</title>
       <link>https://playmythwake.com/news#post-2026-11-17-microsoft-store-launch-bosses-bite-back</link>
