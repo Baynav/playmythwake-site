@@ -1,7 +1,7 @@
 /* Mythwake hiscores - written by the game server (Server/src/Hiscores.cs). Do not edit by hand. */
 window.MYTHWAKE_HISCORES = {
-  updated: "2026-11-19 00:48 UTC",
-  online: 1,
+  updated: "2026-11-19 00:58 UTC",
+  online: 0,
   players: [
     { name: "Mckdank", skills: [[23, 92053], [10, 4022], [20, 49848], [22, 74509], [22, 76789], [13, 10831], [7, 1606], [16, 22842], [12, 7487], [12, 8821], [5, 658], [6, 837], [9, 2821], [14, 13829]] },
     { name: "Vedder96", skills: [[20, 51701], [20, 48581], [20, 49035], [16, 21229], [21, 59753], [11, 6929], [6, 977], [16, 23411], [11, 5564], [8, 2158], [5, 648], [14, 12633], [7, 1469], [14, 14972]] },
