@@ -27,8 +27,8 @@ for every report: keep them coming through Menu > Report a bug or the Discord.
 ## Highlights
 - **Silver jewellery.** Mine silver, smith rings, earrings and pendants, and string a necklace.
 - **A new necklace slot** in the Character window.
-- **Faster early skilling.** Levels 8-15 of every gathering and crafting skill no longer drag, and the time to level 40
-  stays the same.
+- **Faster early skilling.** The early levels of every gathering and crafting skill now go by quickly, the way early
+  levels should.
 - **Hides every time.** Every animal you can skin now drops one or two hides.
 - **Controller and phone polish.** Clearer loot-bag controls, and every hint names the right button for your device.
 
@@ -50,8 +50,8 @@ for every report: keep them coming through Menu > Report a bug or the Discord.
   (was 18). Copper Ore stays 10 - Silver Ore (31) is the new step at level 8.
 - Crafting, first tier: oak bows and staves, the first potions and the first cooked food pay about twice as much.
 - Smithing and Tailoring recipes from level 15 to 29 pay about twice as much.
-- To keep the time to level 40 the same, the resources and recipes from level 15 to 44 in the other skills, and from
-  level 30 to 44 in Smithing and Tailoring, pay a little less.
+- The resources and recipes from level 15 to 44 in the other skills, and from level 30 to 44 in Smithing and
+  Tailoring, pay a little less.
 - Every skinnable animal drops 1-2 hides every time (was a 40% chance): rats, piglets and boars, thornhogs and wolves,
   crag lizards, brutes and bristlebacks.
 
