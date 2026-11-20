@@ -13,6 +13,70 @@
 
 window.MYTHWAKE_NEWS = [
   {
+    date: "2026-11-20",
+    category: "Patch notes",
+    title: "Silver Jewellery - Faster Early Skilling and Controller Fixes",
+    published: "2026-11-20T06:10:44Z",
+    body: `
+Silver comes to Mythwake: a new ore, rings, earrings and a brand-new necklace slot. The early levels of every gathering
+and crafting skill move faster, every animal you can skin drops a hide, and there's a sweep of fixes for controller and
+phone players. **This update needs the newest version of the game:** the launcher downloads it at once, and Microsoft
+Store players get it through the Store. The game closes for a minute during the update, with a countdown first. Thanks
+for every report: keep them coming through Menu > Report a bug or the Discord.
+
+## Highlights
+- **Silver jewellery.** Mine silver, smith rings, earrings and pendants, and string a necklace.
+- **A new necklace slot** in the Character window.
+- **Faster early skilling.** Levels 8-15 of every gathering and crafting skill no longer drag, and the time to level 40
+  stays the same.
+- **Hides every time.** Every animal you can skin now drops one or two hides.
+- **Controller and phone polish.** Clearer loot-bag controls, and every hint names the right button for your device.
+
+## New
+- Silver Rocks (Prospecting 8): a cluster of six just outside Pellow, a short run from the bank.
+- Smithing silver: Silver Bar (Forging 8, 2 ore), Silver Band (9), Silver Earring (10) and Silver Pendant (11).
+- Tailoring: Wool Cord from fleece (Tailoring 8), and the Silver Necklace (10): a pendant on a wool cord.
+- The necklace slot: the Character window now has a Necklace slot (right column), and Gloves moved under Boots. Silver
+  jewellery is worn from level 12: the Silver Band (Attack +2, critical chance +1.6%), the Silver Earring (Health +70,
+  Mana +35) and the Silver Necklace (Defence +4, Accuracy +1.2%).
+- The Tolvadden armourer sells the silver band and earring.
+
+## Balance
+- Jewellery is made from silver now: the Copper Band, Iron Band and the herb earrings can no longer be made. If you have
+  one, you keep it, and it can still be worn and traded.
+- The Downs Sheep are level 8 (was 13) and graze near Pellow, so new tailors can get fleece early.
+- Velvet Cloth is woven from Mohair (was a herb).
+- Gathering, first tier: Oak Logs 28 XP (was 9), Shrimp 12 (was 8), Trout 36 (was 23), Sorrel 11 (was 7), Feverfew 28
+  (was 18). Copper Ore stays 10 - Silver Ore (31) is the new step at level 8.
+- Crafting, first tier: oak bows and staves, the first potions and the first cooked food pay about twice as much.
+- Smithing and Tailoring recipes from level 15 to 29 pay about twice as much.
+- To keep the time to level 40 the same, the resources and recipes from level 15 to 44 in the other skills, and from
+  level 30 to 44 in Smithing and Tailoring, pay a little less.
+- Every skinnable animal drops 1-2 hides every time (was a 40% chance): rats, piglets and boars, thornhogs and wolves,
+  crag lizards, brutes and bristlebacks.
+
+## Improvements
+- Controller: the loot window's hint has its own row ("pick", "take", "close") and the button says "Hold RB: take all".
+- Controller: the prompt by your loot bags reads "[RB] Loot · hold RB: take all", and never shows a keyboard key while
+  you're playing on a controller.
+- Help has a section for phone controls.
+- Settings > Key bindings always lists keyboard keys.
+- Tutorial Island's lessons name the right button on keyboard, controller and phone (the food lesson no longer says
+  "press 3" on a controller or phone).
+- Messages that assumed a mouse now work for every device: equipping a second sword (use the bag's item menu), opening a
+  player's menu, and where to find Help.
+
+## Fixes
+- Fixed pressing down on the D-pad to close the loot window also opening your bag.
+- Fixed the controller loot window's hint being cut off when a bag held only a few items.
+- Fixed Help, the welcome card and Settings still saying Z picks up loot (loot bags open with Alt / RB; Z picks up items
+  on the ground).
+- Fixed the world map saying the right stick moves its cursor (it's the left stick).
+- Fixed putting on a saved gear set not putting every piece back on.
+- Fixed several hints and tooltips naming the wrong button on a controller or phone.
+`
+  },
+  {
     date: "2026-11-18",
     category: "Patch notes",
     title: "Loot Bags - Follow Me, Party Play and Smoother Chat",
