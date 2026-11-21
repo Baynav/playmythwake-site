@@ -6,12 +6,20 @@
     <description>News and patch notes for Mythwake, an online 2D RPG.</description>
     <language>en</language>
     <atom:link href="https://playmythwake.com/news.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 20 Nov 2026 06:10:44 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 10:41:06 +0000</lastBuildDate>
     <image>
       <url>https://playmythwake.com/img/apple-touch-icon.png</url>
       <title>Mythwake News</title>
       <link>https://playmythwake.com/news</link>
     </image>
+    <item>
+      <title>The Mines Update - Mixed Ores, New Mines and a Crater</title>
+      <link>https://playmythwake.com/news#post-2026-11-21-the-mines-update-mixed-ores-new-mines-and-a-crater</link>
+      <guid isPermaLink="true">https://playmythwake.com/news#post-2026-11-21-the-mines-update-mixed-ores-new-mines-and-a-crater</guid>
+      <pubDate>Sat, 21 Nov 2026 10:41:06 +0000</pubDate>
+      <category>Patch notes</category>
+      <description>&lt;p&gt;The mines get their own update. Every mine now sits on rocky ground and mixes its ores, three towns get a small mine of their own, and Pellow&amp;#39;s starter mine moves out into a crater you climb down into. There are also a better bank sort, clearer map colours and a few fixes. The game closes for a minute during the update, with a countdown first; Microsoft Store players get it through the Store, and the launcher downloads only what changed. Thanks for every report: keep them coming through Menu &amp;gt; Report a bug or the Discord.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Highlights&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Mixed mines.&lt;/strong&gt; Town mines hold more than one kind of ore, the common ores in the middle and the rarer ones round the edge, and every mine sits on rocky ground.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;New small mines&lt;/strong&gt; outside Lanvean, Tolvadden and Sloughton.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;A crater mine at Pellow.&lt;/strong&gt; Step down two ledges to reach the copper and silver at the bottom.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;A tidier bank.&lt;/strong&gt; Sort groups your gear by combat style and tier.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Clearer maps.&lt;/strong&gt; Friends, guildmates and party members each have their own colour.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://playmythwake.com/news#post-2026-11-21-the-mines-update-mixed-ores-new-mines-and-a-crater"&gt;Read the full notes&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Silver Jewellery - Faster Early Skilling and Controller Fixes</title>
       <link>https://playmythwake.com/news#post-2026-11-20-silver-jewellery-faster-early-skilling-and-controller-fixes</link>

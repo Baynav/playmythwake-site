@@ -13,6 +13,56 @@
 
 window.MYTHWAKE_NEWS = [
   {
+    date: "2026-11-21",
+    category: "Patch notes",
+    title: "The Mines Update - Mixed Ores, New Mines and a Crater",
+    published: "2026-11-21T10:41:06Z",
+    body: `
+The mines get their own update. Every mine now sits on rocky ground and mixes its ores, three towns get a small mine of
+their own, and Pellow's starter mine moves out into a crater you climb down into. There are also a better bank sort,
+clearer map colours and a few fixes. The game closes for a minute during the update, with a countdown first; Microsoft
+Store players get it through the Store, and the launcher downloads only what changed. Thanks for every report: keep them
+coming through Menu > Report a bug or the Discord.
+
+## Highlights
+- **Mixed mines.** Town mines hold more than one kind of ore, the common ores in the middle and the rarer ones round
+  the edge, and every mine sits on rocky ground.
+- **New small mines** outside Lanvean, Tolvadden and Sloughton.
+- **A crater mine at Pellow.** Step down two ledges to reach the copper and silver at the bottom.
+- **A tidier bank.** Sort groups your gear by combat style and tier.
+- **Clearer maps.** Friends, guildmates and party members each have their own colour.
+
+## New
+- Pellow's mine is a crater: walk to the edge and step down onto a ledge, then down again to the rocks. Two slopes lead
+  in, the first from the road.
+- Lanvean has a small mine in the woods outside town: 2 Silver, 2 Iron and 1 Coal.
+- Tolvadden has a small mine on the mainland, just across the north-east bridge: 2 Copper, 1 Silver and 1 Iron.
+- Sloughton has a small mine out by the marsh: 1 Silver, 2 Iron and 1 Coal.
+
+## Improvements
+- Bank and bag Sort now groups gear by combat style, then by tier: melee from the lowest tier up, then ranged, then
+  magic, then pieces any style can use and jewellery. Within a tier: weapon, off-hand, ammo, then helmet to boots.
+- Minimap: friends show as green dots, your guild as purple and your party as blue (party members are still drawn
+  larger and on top).
+- World map: party members are a blue X (was green).
+- Every mine sits on its own patch of rocky ground instead of open grass.
+- Rolling ground has soft light and shade everywhere, not only beside cliffs, so grassy hills read better.
+
+## Balance
+- Town mines mix their ores. Pellow: 4 Copper and 2 Silver, with no Iron. Hollin Downs: mostly Silver, with some Iron
+  and a little Coal. Tolgarrick: Copper, Silver and Iron near town, with more Coal further out.
+- Pellow's mine is a short walk further from the bank, out on open grass east of the road (18 seconds, was about 10).
+- Rocks take a little longer to come back: Silver 13.5 seconds (was 13), Iron 18 (was 17), Coal 22 (was 21).
+  Copper is unchanged at 13.
+
+## Fixes
+- Fixed Enter doing nothing in the "how many?" box (withdraw, deposit, drop, sell, offer). Enter confirms the amount.
+- Fixed being able to chop down the Lifttree in Lanvean and other landmark trees. They're scenery now.
+- Fixed "Silk for the Wards" rewarding an earring that can no longer be made. It rewards the Silver Necklace, and its
+  steps send you to the Downs Sheep outside Pellow.
+`
+  },
+  {
     date: "2026-11-20",
     category: "Patch notes",
     title: "Silver Jewellery - Faster Early Skilling and Controller Fixes",
