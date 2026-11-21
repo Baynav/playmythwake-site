@@ -30,43 +30,38 @@
       members: Number(g.members) || 0, total: Number(g.total) || 0 };
   });
 
-  /* The emblem, drawn as the game draws it (Client EmblemBake.BakeArt): Art Studio's background tinted by multiplying
-     with the light colour, the symbol in the dark colour. img/guild-emblems.png: 64 px cells, 6 a row - the square,
-     shield, circle and triangle backgrounds, then symbols 0-31. Palettes: Shared/GuildEmblems.cs Light / Dark. */
+  /* The emblem, as the game draws it (Bay, Nov 21: the symbol alone, no shape): the symbol filled with the light
+     colour, outlined in the dark one (Client EmblemBake.BakeSmall). img/guild-emblems.png: 64 px cells, 6 a row; the
+     symbols are cells 4-35. Palettes: Shared/GuildEmblems.cs Light / Dark. */
   var LIGHT = ["#F2E6C8", "#A9D4F5", "#B5E8C8", "#F4B8C0", "#F5D46E", "#D2BFF0", "#D9DEE5", "#F7C9A0", "#C9D9A5", "#D4F1F4"];
   var DARK = ["#15264A", "#7A1420", "#1E4A26", "#161616", "#3D1F66", "#4A2E15", "#0F4A4D", "#5A1A3A", "#2E3A48", "#7A3A10"];
   var CELL = 64, sheet = new Image(), sheetReady = false, waiting = [];
   sheet.onload = function () { sheetReady = true; waiting.splice(0).forEach(function (f) { f(); }); };
-  sheet.src = "img/guild-emblems.png";
-  function cellAt(ctx, k, x, y, w) {
-    ctx.drawImage(sheet, (k % 6) * CELL, Math.floor(k / 6) * CELL, CELL, CELL, x, y, w, w);
+  sheet.src = "img/guild-emblems.png?v=2";
+  function tinted(sym, colour, s, box) {
+    var t = document.createElement("canvas"); t.width = t.height = s;
+    var c = t.getContext("2d"), k = 4 + sym;
+    c.drawImage(sheet, (k % 6) * CELL, Math.floor(k / 6) * CELL, CELL, CELL, (s - box) / 2, (s - box) / 2, box, box);
+    c.globalCompositeOperation = "source-in";
+    c.fillStyle = colour; c.fillRect(0, 0, s, s);
+    return t;
   }
   function emblem(e) {
     var c = el("canvas", "hs-emblem");
     c.width = c.height = CELL;
-    var shape = e[0], back = e[1], sym = e[2], fore = e[3];
-    if (!(shape >= 1 && shape <= 4) || !LIGHT[back] || !DARK[fore] || !(sym >= 0 && sym < 32)) {
+    var back = e[1], sym = e[2], fore = e[3];
+    if (!(e[0] >= 1) || !LIGHT[back] || !DARK[fore] || !(sym >= 0 && sym < 32)) {
       c.className += " none";
       return c;
     }
     function paint() {
-      var ctx = c.getContext("2d"), s = CELL;
-      // the background, multiplied by the light colour, keeping its own outline
-      cellAt(ctx, shape - 1, 0, 0, s);
-      ctx.globalCompositeOperation = "multiply";
-      ctx.fillStyle = LIGHT[back]; ctx.fillRect(0, 0, s, s);
-      ctx.globalCompositeOperation = "destination-in";
-      cellAt(ctx, shape - 1, 0, 0, s);
-      // the symbol in the dark colour: 0.66 of the emblem (the triangle 0.55, lower; the shield a little higher)
-      var box = s * (shape === 4 ? 0.55 : 0.66), cy = s * (shape === 4 ? 0.58 : shape === 2 ? 0.48 : 0.5);
-      var t = document.createElement("canvas"); t.width = t.height = s;
-      var tc = t.getContext("2d");
-      cellAt(tc, 4 + sym, s / 2 - box / 2, cy - box / 2, box);
-      tc.globalCompositeOperation = "source-in";
-      tc.fillStyle = DARK[fore]; tc.fillRect(0, 0, s, s);
-      ctx.globalCompositeOperation = "source-atop";
-      ctx.drawImage(t, 0, 0);
-      ctx.globalCompositeOperation = "source-over";
+      var ctx = c.getContext("2d"), s = CELL, ring = 3;
+      var box = (s - 2 * ring) / 0.86;   // Art Studio's symbols keep ~8% clear on every side
+      var dark = tinted(sym, DARK[fore], s, box), light = tinted(sym, LIGHT[back], s, box);
+      for (var a = 0; a < 16; a++) {     // the outline: the dark symbol all round, ring px out
+        ctx.drawImage(dark, Math.round(Math.cos(a * Math.PI / 8) * ring), Math.round(Math.sin(a * Math.PI / 8) * ring));
+      }
+      ctx.drawImage(light, 0, 0);
     }
     if (sheetReady) paint(); else waiting.push(paint);
     return c;
