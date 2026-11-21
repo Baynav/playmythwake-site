@@ -403,3 +403,8 @@ input:focus-visible, button:focus-visible, a:focus-visible { outline: 3px solid 
   .hs-table th, .hs-table td { padding: 6px; font-size: .92rem; }
   .reqs th { width: 40%; }
 }
+
+/* Guild hiscores (Nov 21): the emblem beside the guild's name */
+.hs-guild { display: flex; align-items: center; gap: 8px; }
+.hs-emblem { width: 28px; height: 28px; flex: none; }
+.hs-emblem.none { visibility: hidden; }
