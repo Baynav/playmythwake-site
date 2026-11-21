@@ -20,8 +20,9 @@ window.MYTHWAKE_NEWS = [
     body: `
 Mines, guilds and crafting all get attention in this update. Every mine now sits on rocky ground and mixes its ores,
 three towns get a small mine of their own, and Pellow's starter mine moves into a crater you climb down into. Guilds get
-emblems and their own hiscores, crafting pays for every ingredient you use, and Foraging levels faster. There are also a
-better bank sort, clearer map colours, tidier fields and a few fixes. The game closes for a minute during the update,
+emblems and their own hiscores, crafting pays for every ingredient you use, iron pays more, Foraging levels faster and
+quests now have a difficulty that sets their rewards. There are also a better bank sort, clearer map colours, tidier
+fields and towns, and a few fixes. The game closes for a minute during the update,
 with a countdown first; Microsoft Store players get it through the Store, and the launcher downloads only what
 changed. Thanks for every report: keep them coming through Menu > Report a bug or the Discord.
 
@@ -32,10 +33,14 @@ changed. Thanks for every report: keep them coming through Menu > Report a bug o
 - **A crater mine at Pellow.** Step down two ledges to reach the copper and silver at the bottom.
 - **A tidier bank.** Sort groups your gear by combat style and tier.
 - **Clearer maps.** Friends, guildmates and party members each have their own colour.
-- **Guild emblems.** Design your guild's crest: a shape, a symbol and two colours. It shows next to your guild's name.
+- **Guild emblems.** Pick your guild's symbol and its two colours. It shows next to your guild's name.
 - **Guild hiscores.** Guilds are ranked by the combined total level of all their members.
 - **Crafting pays properly.** Every ingredient in a recipe now gives XP, and higher-level recipes always pay more.
 - **Faster Foraging.** Every herb patch gives 50% more XP.
+- **Faster combat levels.** Monsters give 50% more XP per kill.
+- **Iron pays its way.** Iron Rocks and iron smithing give a third more XP.
+- **Quest difficulty.** Every quest is Beginner, Intermediate or Master, with a recommended level, and its rewards
+  match its difficulty.
 
 ## New
 - Pellow's mine is a crater: walk to the edge and step down onto a ledge, then down again to the rocks. Two slopes lead
@@ -43,8 +48,10 @@ changed. Thanks for every report: keep them coming through Menu > Report a bug o
 - Lanvean has a small mine in the woods outside town: 2 Silver, 2 Iron and 1 Coal.
 - Tolvadden has a small mine on the mainland, just across the north-east bridge: 2 Copper, 1 Silver and 1 Iron.
 - Sloughton has a small mine out by the marsh: 1 Silver, 2 Iron and 1 Coal.
-- Guild emblems: the guild's leader or officers choose a background shape (square, shield, circle or triangle), one of
-  32 symbols, a light background colour and a dark symbol colour. Open the guild window to design it. The first emblem
+- Lanvean's mine is a crater too, cut into the woods, with two ways down.
+- Quests show their difficulty (Beginner, Intermediate or Master) and a recommended level in the quest list, the
+  quest details, when a quest is offered, and on the world map.
+- Guild emblems: the guild's leader or officers choose one of 32 symbols, a fill colour and an outline colour. Open the guild window to design it. The first emblem
   is free, for new guilds and for every guild that already exists; changing it afterwards costs 50,000 coins.
 - The emblem shows next to the guild's name under its members, in the guild window and on the guild hiscores.
 - Guild hiscores: a Guilds tab in the Hiscores window ranks every guild by its members' combined total level.
@@ -52,8 +59,16 @@ changed. Thanks for every report: keep them coming through Menu > Report a bug o
 ## Improvements
 - Guild names under players are purple: your own guild in the guild-chat purple, other guilds a softer purple (were
   green and sand).
-- Wheatlow's fields are clean plots again: soil plots with grass lanes between them, wheat only on the soil, and the
-  farm easing into the meadow at its edge.
+- Wheatlow's fields are clean plots again: tilled plots with wheat, stubble and bare untilled soil, with grass lanes
+  between them and the farm easing into the meadow at its edge. The minimap and world map show the plots in the same
+  colours.
+- Every town's lodestone stands on its own small paved circle at the end of a short walkway, off the square and the
+  streets.
+- Campfires that stood on a road now sit beside it, with a log to sit on.
+- Stray standing stones are gone: the Saffah Well is a real well now, and the one beside Pellow's chapel is removed.
+- The lone Silver Rock east of Hollin Downs is gone; the main Hollin Downs mine is unchanged.
+- Settings no longer has a Graphics Quality option. It changed almost nothing; the game always uses the best setting
+  for your device.
 - Bank and bag Sort now groups gear by combat style, then by tier: melee from the lowest tier up, then ranged, then
   magic, then pieces any style can use and jewellery. Within a tier: weapon, off-hand, ammo, then helmet to boots.
 - Minimap: friends show as green dots, your guild as purple and your party as blue (party members are still drawn
@@ -68,13 +83,20 @@ changed. Thanks for every report: keep them coming through Menu > Report a bug o
 - Pellow's mine is a short walk further from the bank, out on open grass east of the road (18 seconds, was about 10).
 - Rocks take a little longer to come back: Silver 13.5 seconds (was 13), Iron 18 (was 17), Coal 22 (was 21).
   Copper is unchanged at 13.
-
 - Crafting: every secondary ingredient now adds XP, half as much as one of the recipe's main materials. For example, the
-  Iron Claw (2 Iron Bars and 1 Rugged Leather) gives 68 XP (was 54).
+  Oak Arrows (1 Oak Log and 1 Copper Bar) give 32 XP (was 21).
 - Crafting: a higher-level recipe never pays less than a lower one, so the best recipe at each level is one of about
-  that level. For example, the Steel Claw gives 76 XP (was 33), the Steel Greatsword 152 (was 82), the Silk Fire
+  that level. For example, the Steel Claw gives 103 XP (was 33), the Steel Greatsword 206 (was 82), the Silk Fire
   Focus and Silk Robe 154 (were 60 and 75), the Ash Staff 98 (was 68) and the Defence Potion 42 (was 14). The early
   recipes are unchanged.
+- Monsters give 50% more combat XP per kill; bosses are unchanged. For example, a Timber Wolf gives a level 24 player
+  87 XP (was 58).
+- Iron Rocks give 50 XP (was 37). Iron smithing pays about a third more: Iron Bar 18 (was 13), Iron Claw 91 (was 54),
+  Iron Greatsword 182 (was 135). Bars, and the higher leathers and cloths, pay a little more too.
+- Quest rewards follow the quest's difficulty and recommended level: big at low levels, a solid bonus higher up. Most
+  quests pay less XP and coins than before, such as The Drowned Quarter at 37,000 XP (was 155,000) and Heart of the
+  Mountain at 96,000 (was 270,000). The first quests on the mainland still carry a new player through their first
+  levels: The Tide Brings Another 120 XP (was 450), Across the Water 270 (was 450), Spectacles on the Sand 390 (was 940).
 - Foraging: every herb patch gives 50% more XP. Sorrel 16 (was 11), Feverfew 43 (was 28), Comfrey 54 (was 36),
   Yarrow 95 (was 63).
 
