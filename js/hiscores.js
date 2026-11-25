@@ -67,6 +67,35 @@
     return c;
   }
 
+  /* Minigame and world-event boards (Nov 24): data.minigames holds one array per board, already in rank order
+     ({ name, score }), from the server's MinigameBoards. A board shows only once its key is in the file, and boards
+     in HOLD stay hidden until their content ships. */
+  var MINIGAMES = -3, EVENTS = -4;
+  var BOARDS = [
+    { key: "duel_best_rung", group: MINIGAMES, name: "Duel Ring: best rung", col: "Rung" },
+    { key: "duel_wins", group: MINIGAMES, name: "Duel Ring: duels won", col: "Wins" },
+    { key: "rush_best_streak", group: MINIGAMES, name: "The Undermarket: best streak", col: "Streak" },
+    { key: "rush_orders", group: MINIGAMES, name: "The Undermarket: carts loaded", col: "Carts" },
+    { key: "fogwrack_returns", group: MINIGAMES, name: "Fogwrack: things returned", col: "Returns" },
+    { key: "fogborn_defeated", group: MINIGAMES, name: "Fogwrack: Fogborn defeated", col: "Fogborn" },
+    { key: "lanterns_lit", group: MINIGAMES, name: "Quietside: lanterns lit", col: "Lanterns" },
+    { key: "wreck_searches", group: EVENTS, name: "The Wreck at Low Water: spots searched", col: "Searches" },
+    { key: "caravans_escorted", group: EVENTS, name: "The Salt Caravan: caravans escorted", col: "Caravans" }
+  ];
+  var HOLD = [];   // keys of boards whose content isn't in the game yet (the caravan was held until Nov 24)
+  var mg = data.minigames || null;
+  var boardRows = {};
+  BOARDS.forEach(function (b) {
+    boardRows[b.key] = (mg && Array.isArray(mg[b.key]) ? mg[b.key] : []).filter(function (r) { return r && r.name; })
+      .map(function (r) { return { name: String(r.name), score: Number(r.score) || 0 }; });
+  });
+  function boardsOf(group) {
+    return BOARDS.filter(function (b) { return b.group === group && HOLD.indexOf(b.key) < 0; });
+  }
+  var boardPick = {};
+  boardPick[MINIGAMES] = boardsOf(MINIGAMES)[0];
+  boardPick[EVENTS] = boardsOf(EVENTS)[0];
+
   var $ = function (id) { return document.getElementById(id); };
   function el(tag, cls, text) {
     var e = document.createElement(tag);
@@ -82,7 +111,10 @@
       return B[0] - A[0] || B[1] - A[1] || a.name.localeCompare(b.name);
     });
   }
-  function skillName(skill) { return skill === GUILDS ? "Guilds" : skill < 0 ? "Overall" : SKILLS[skill]; }
+  function skillName(skill) {
+    return skill === GUILDS ? "Guilds" : skill === MINIGAMES ? "Minigames" : skill === EVENTS ? "Events" :
+      skill < 0 ? "Overall" : SKILLS[skill];
+  }
 
   var state = { skill: -1, page: 1 };
 
@@ -92,7 +124,8 @@
     var b = el("button", "hs-skill");
     b.type = "button";
     var dot = el("span", "hs-dot");
-    dot.style.background = i === GUILDS ? "#9b6fd6" : i < 0 ? "#f2b632" : COLORS[i];
+    dot.style.background = i === GUILDS ? "#9b6fd6" : i === MINIGAMES ? "#1d8a8a" : i === EVENTS ? "#ff9a3c" :
+      i < 0 ? "#f2b632" : COLORS[i];
     b.appendChild(dot);
     b.appendChild(document.createTextNode(skillName(i)));
     b.addEventListener("click", function () { show(i, 1); });
@@ -100,6 +133,8 @@
     return b;
   }
   list.appendChild(skillButton(GUILDS));   // first, as in the game's Hiscores window
+  list.appendChild(skillButton(MINIGAMES));
+  if (boardsOf(EVENTS).length) list.appendChild(skillButton(EVENTS));
   list.appendChild(skillButton(-1));
   SKILLS.forEach(function (_, i) { list.appendChild(skillButton(i)); });
 
@@ -113,14 +148,19 @@
     $("hs-title").textContent = skillName(skill) + " Hiscores";
     $("hs-player").hidden = true;
     $("hs-table-wrap").hidden = false;
-    $("hs-search-form").style.display = skill === GUILDS ? "none" : "";   // the search finds players
+    var isBoard = skill === MINIGAMES || skill === EVENTS;
+    $("hs-search-form").style.display = skill === GUILDS || isBoard ? "none" : "";   // the search finds players' skills
     var body = $("hs-rows");
     body.textContent = "";
     $("hs-head").textContent = "";
-    (skill === GUILDS ? ["Rank", "Guild", "Members", "Total level"] : ["Rank", "Name", "Level", "XP"]).forEach(function (h) {
+    var pick = isBoard ? boardPick[skill] : null;
+    (skill === GUILDS ? ["Rank", "Guild", "Members", "Total level"] : isBoard ? ["Rank", "Name", pick ? pick.col : ""] :
+      ["Rank", "Name", "Level", "XP"]).forEach(function (h) {
       $("hs-head").appendChild(el("th", null, h));
     });
+    showBoardPicker(isBoard ? skill : null);
     if (skill === GUILDS) { showGuilds(page); return; }
+    if (isBoard) { showBoard(skill, page); return; }
     var rows = ranked(skill);
     var pages = Math.max(1, Math.ceil(rows.length / PER_PAGE));
     if (page > pages) page = state.page = pages;
@@ -176,6 +216,48 @@
     $("hs-next").disabled = page >= pages;
   }
 
+  /* The board buttons above the table, for the Minigames and Events tabs. */
+  function showBoardPicker(group) {
+    var row = $("hs-boards");
+    row.textContent = "";
+    row.hidden = group == null;
+    if (group == null) return;
+    boardsOf(group).forEach(function (b) {
+      var btn = el("button", "hs-board" + (boardPick[group] === b ? " on" : ""), b.name);
+      btn.type = "button";
+      btn.addEventListener("click", function () { boardPick[group] = b; show(group, 1); });
+      row.appendChild(btn);
+    });
+  }
+  function showBoard(group, page) {
+    var b = boardPick[group], body = $("hs-rows");
+    $("hs-title").textContent = b ? b.name : skillName(group) + " Hiscores";
+    var rows = b ? boardRows[b.key] : [];
+    var pages = Math.max(1, Math.ceil(rows.length / PER_PAGE));
+    if (page > pages) page = state.page = pages;
+    if (!rows.length) {
+      var tr = el("tr"), td = el("td", "hs-empty");
+      td.colSpan = 3;
+      td.textContent = mg ? "No one is on this board yet." : "These boards start with the next update.";
+      tr.appendChild(td);
+      body.appendChild(tr);
+    }
+    rows.slice((page - 1) * PER_PAGE, page * PER_PAGE).forEach(function (r, i) {
+      var tr = el("tr");
+      tr.appendChild(el("td", "num", num((page - 1) * PER_PAGE + i + 1)));
+      var nameTd = el("td"), a = el("a", null, r.name);
+      a.href = "?player=" + encodeURIComponent(r.name);
+      a.addEventListener("click", function (e) { e.preventDefault(); lookup(r.name); });
+      nameTd.appendChild(a);
+      tr.appendChild(nameTd);
+      tr.appendChild(el("td", "num", num(r.score)));
+      body.appendChild(tr);
+    });
+    $("hs-pageinfo").textContent = "Page " + page + " of " + pages;
+    $("hs-prev").disabled = page <= 1;
+    $("hs-next").disabled = page >= pages;
+  }
+
   $("hs-prev").addEventListener("click", function () { show(state.skill, state.page - 1); });
   $("hs-next").addEventListener("click", function () { show(state.skill, state.page + 1); });
 
@@ -196,6 +278,7 @@
     $("hs-table-wrap").hidden = true;
     box.hidden = false;
     Array.prototype.forEach.call(list.children, function (b) { b.classList.remove("on"); });
+    showBoardPicker(null);
     if (!p) {
       $("hs-title").textContent = "Player lookup";
       box.appendChild(el("p", "hs-empty", "No player called \"" + name + "\" is on the hiscores" +
@@ -238,5 +321,7 @@
   $("hs-updated").textContent = data.updated ? "Last updated " + data.updated : "";
 
   var params = new URLSearchParams(location.search), q = params.get("player");
-  if (q) { $("hs-search").value = q; lookup(q); } else { show(params.get("table") === "guilds" ? GUILDS : -1, 1); }
+  var table = params.get("table");
+  if (q) { $("hs-search").value = q; lookup(q); }
+  else { show(table === "guilds" ? GUILDS : table === "minigames" ? MINIGAMES : table === "events" && boardsOf(EVENTS).length ? EVENTS : -1, 1); }
 })();
