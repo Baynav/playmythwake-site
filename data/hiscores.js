@@ -1,6 +1,6 @@
 /* Mythwake hiscores - written by the game server (Server/src/Hiscores.cs). Do not edit by hand. */
 window.MYTHWAKE_HISCORES = {
-  updated: "2026-11-25 18:30 UTC",
+  updated: "2026-11-25 18:42 UTC",
   online: 0,
   players: [
     { name: "Vedder96", skills: [[20, 51701], [20, 48581], [21, 64306], [20, 48795], [22, 73687], [19, 44697], [18, 34513], [18, 38665], [14, 12985], [16, 23853], [18, 31888], [18, 32734], [9, 2809], [17, 27526]] },
@@ -39,5 +39,16 @@ window.MYTHWAKE_HISCORES = {
   ],
   guilds: [
     { name: "Periphery", emblem: [4, 0, 24, 3], members: 2, total: 479 }
-  ]
+  ],
+  minigames: {
+    duel_best_rung: [],
+    duel_wins: [],
+    rush_best_streak: [],
+    rush_orders: [],
+    fogwrack_returns: [],
+    fogborn_defeated: [],
+    lanterns_lit: [],
+    wreck_searches: [],
+    caravans_escorted: []
+  }
 };
