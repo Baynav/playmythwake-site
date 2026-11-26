@@ -202,8 +202,8 @@ h1, h2, h3 { font-family: var(--title); font-weight: normal; letter-spacing: .02
 /* ---------- Home: play box ---------- */
 .playbox {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 18px;
+  grid-template-columns: 1fr;   /* the welcome text full width, the store badges in a row under it */
+  gap: 16px;
   align-items: center;
 }
 .playbox h2 { margin: 0 0 6px; font-size: 1.7rem; color: var(--teal); }
