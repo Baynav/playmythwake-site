@@ -7,6 +7,9 @@
    (?mode=direct opens the Store app on Windows; elsewhere it shows the web listing.) */
 const STORE_URL = "https://apps.microsoft.com/detail/9NCS6GLQ56GV?mode=direct";
 
+/* The Google Play listing (Android). The "Get it on Google Play" badges and links point here. */
+const PLAY_URL = "https://play.google.com/store/apps/details?id=com.playmythwake.mythwake";
+
 /* "Leave a review on the Microsoft Store": on Windows this opens the Store app's review dialog; other systems keep
    the link in the page (the web listing). */
 const STORE_REVIEW_APP = "ms-windows-store://review/?ProductId=9NCS6GLQ56GV";
@@ -29,6 +32,7 @@ const SUPPORT_EMAIL = "baynav@playmythwake.com";
 window.MYTHWAKE = {
   storeUrl: STORE_URL,
   storeReviewApp: STORE_REVIEW_APP,
+  playUrl: PLAY_URL,
   downloadUrl: DOWNLOAD_URL,
   downloadNote: DOWNLOAD_NOTE,
   discordUrl: DISCORD_URL,

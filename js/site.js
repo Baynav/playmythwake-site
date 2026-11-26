@@ -67,6 +67,8 @@
 
   /* ---- Microsoft Store badges (the link is also in the page, for browsers without JavaScript) ---- */
   each("[data-store]", function (a) { if (cfg.storeUrl) a.href = cfg.storeUrl; });
+  /* ---- Google Play badges and links ---- */
+  each("[data-play]", function (a) { if (cfg.playUrl) a.href = cfg.playUrl; });
   /* "Leave a review": on Windows the Store app's review dialog opens; elsewhere the link stays the web listing. */
   if (cfg.storeReviewApp && /Windows/i.test(navigator.userAgent || "")) {
     each("[data-store-review]", function (a) { a.href = cfg.storeReviewApp; });
