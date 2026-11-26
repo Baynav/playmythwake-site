@@ -14,6 +14,33 @@
 window.MYTHWAKE_NEWS = [
   {
     date: "2026-11-26",
+    category: "News",
+    title: "Mythwake is now on Android",
+    published: "2026-11-26T19:40:57Z",
+    body: `
+Mythwake is out on Google Play. Take the whole world with you: the same account, the same character and the same world as on PC, in your pocket.
+
+Get it now: https://play.google.com/store/apps/details?id=com.playmythwake.mythwake
+
+## Highlights
+- **One account, one world, cross-play with PC.** Log in with your Mythwake account and pick up right where you left off: your character, skills, gear and bank come with you, and Android and Windows players fight, trade, party and climb the hiscores together.
+- **Made for touch.** Tap to click, hold for the item menu, drag to move items and scroll. Prefer buttons? Plug in or pair a controller.
+- **Quick to start.** Install it from Google Play and sign up with your email in the game, or log in with the account you already have.
+
+## New here? Catch up on the latest update
+- Mythwake just had its biggest update yet: three minigames (the Duel Ring, the Undermarket and Fogwrack), two world events (the Salt Caravan and the Wreck at Low Water) and new shores to explore. See it all here: https://playmythwake.com/minigames-and-events.html
+
+## A thank-you
+- Massively Overpowered featured Mythwake in "MMOs You've Never Heard Of": https://massivelyop.com/2026/11/23/mmos-youve-never-heard-of-mythwake-saltwarden-online-and-lugh-world/ Thank you, Massively Overpowered! And thank you, Jai, one of our community, for spotting it and sharing it in our Discord. Welcome to everyone joining us from there.
+
+## Where to play
+- Mythwake is available on Windows (Microsoft Store) and Android (Google Play). Find direct links at playmythwake.com/download.
+- It's still the Open Beta: new land, bosses and features keep arriving with updates, on both.
+- Tell us how it plays on your phone: Menu > Report a bug, or the Discord.
+`
+  },
+  {
+    date: "2026-11-26",
     category: "Patch notes",
     title: "Quietside Keepers - Fixes and Polish for the Minigames & Events Update",
     published: "2026-11-26T19:40:51Z",

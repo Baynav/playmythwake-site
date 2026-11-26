@@ -6,12 +6,20 @@
     <description>News and patch notes for Mythwake, an online 2D RPG.</description>
     <language>en</language>
     <atom:link href="https://playmythwake.com/news.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 26 Nov 2026 19:40:51 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 19:40:57 +0000</lastBuildDate>
     <image>
       <url>https://playmythwake.com/img/apple-touch-icon.png</url>
       <title>Mythwake News</title>
       <link>https://playmythwake.com/news</link>
     </image>
+    <item>
+      <title>Mythwake is now on Android</title>
+      <link>https://playmythwake.com/news#post-2026-11-26-mythwake-is-now-on-android</link>
+      <guid isPermaLink="true">https://playmythwake.com/news#post-2026-11-26-mythwake-is-now-on-android</guid>
+      <pubDate>Thu, 26 Nov 2026 19:40:57 +0000</pubDate>
+      <category>News</category>
+      <description>&lt;p&gt;Mythwake is out on Google Play. Take the whole world with you: the same account, the same character and the same world as on PC, in your pocket.&lt;/p&gt;&lt;p&gt;Get it now: &lt;a href="https://play.google.com/store/apps/details?id=com.playmythwake.mythwake"&gt;https://play.google.com/store/apps/details?id=com.playmythwake.mythwake&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Highlights&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;One account, one world, cross-play with PC.&lt;/strong&gt; Log in with your Mythwake account and pick up right where you left off: your character, skills, gear and bank come with you, and Android and Windows players fight, trade, party and climb the hiscores together.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Made for touch.&lt;/strong&gt; Tap to click, hold for the item menu, drag to move items and scroll. Prefer buttons? Plug in or pair a controller.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Quick to start.&lt;/strong&gt; Install it from Google Play and sign up with your email in the game, or log in with the account you already have.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://playmythwake.com/news#post-2026-11-26-mythwake-is-now-on-android"&gt;Read the full notes&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Quietside Keepers - Fixes and Polish for the Minigames &amp; Events Update</title>
       <link>https://playmythwake.com/news#post-2026-11-26-quietside-keepers-fixes-and-polish-for-the-minigames-events-update</link>
