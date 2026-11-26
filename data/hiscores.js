@@ -1,7 +1,7 @@
 /* Mythwake hiscores - written by the game server (Server/src/Hiscores.cs). Do not edit by hand. */
 window.MYTHWAKE_HISCORES = {
-  updated: "2026-11-26 18:53 UTC",
-  online: 0,
+  updated: "2026-11-26 19:08 UTC",
+  online: 1,
   players: [
     { name: "Vedder96", skills: [[20, 51701], [20, 48581], [21, 65255], [20, 48795], [22, 73997], [19, 44697], [18, 35713], [19, 47965], [14, 13441], [16, 23853], [18, 33994], [18, 32734], [10, 3847], [17, 27526]] },
     { name: "Bay", skills: [[1, 36], [25, 124753], [20, 55970], [12, 8621], [21, 66341], [21, 68743], [11, 6467], [14, 14896], [24, 105190], [19, 45896], [11, 6108], [18, 35908], [22, 73010], [12, 7241]] },
@@ -47,7 +47,7 @@ window.MYTHWAKE_HISCORES = {
     duel_wins: [],
     rush_best_streak: [],
     rush_orders: [],
-    fogwrack_returns: [{ name: "Vedder96", score: 58 }, { name: "Bay", score: 38 }],
+    fogwrack_returns: [{ name: "Vedder96", score: 58 }, { name: "Bay", score: 41 }],
     fogborn_defeated: [],
     lanterns_lit: [{ name: "Vedder96", score: 3 }, { name: "Bay", score: 3 }, { name: "Erc", score: 3 }, { name: "JaiDGreat", score: 2 }],
     wreck_searches: [{ name: "Erc", score: 11 }],
