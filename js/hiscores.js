@@ -70,7 +70,7 @@
   /* Minigame and world-event boards (Nov 24): data.minigames holds one array per board, already in rank order
      ({ name, score }), from the server's MinigameBoards. A board shows only once its key is in the file, and boards
      in HOLD stay hidden until their content ships. */
-  var MINIGAMES = -3, EVENTS = -4;
+  var MINIGAMES = -3, EVENTS = -4, QUESTS = -5;
   var BOARDS = [
     { key: "duel_best_rung", group: MINIGAMES, name: "Duel Ring: best rung", col: "Rung" },
     { key: "duel_wins", group: MINIGAMES, name: "Duel Ring: duels won", col: "Wins" },
@@ -80,13 +80,20 @@
     { key: "fogborn_defeated", group: MINIGAMES, name: "Fogwrack: Fogborn defeated", col: "Fogborn" },
     { key: "lanterns_lit", group: MINIGAMES, name: "Quietside: lanterns lit", col: "Lanterns" },
     { key: "wreck_searches", group: EVENTS, name: "The Wreck at Low Water: spots searched", col: "Searches" },
-    { key: "caravans_escorted", group: EVENTS, name: "The Salt Caravan: caravans escorted", col: "Caravans" }
+    { key: "caravans_escorted", group: EVENTS, name: "The Salt Caravan: caravans escorted", col: "Caravans" },
+    /* Nov 26: quest points, its own tab. It shows once the server's export carries it: the top-level "quests" list,
+       the same { name, score } rows in rank order ("quest_points" is read too). */
+    { key: "quest_points", alt: "quests", group: QUESTS, name: "Quest points", col: "Quest points" }
   ];
   var HOLD = [];   // keys of boards whose content isn't in the game yet (the caravan was held until Nov 24)
   var mg = data.minigames || null;
   var boardRows = {};
   BOARDS.forEach(function (b) {
-    boardRows[b.key] = (mg && Array.isArray(mg[b.key]) ? mg[b.key] : []).filter(function (r) { return r && r.name; })
+    var src = [b.key, b.alt].reduce(function (found, k) {
+      return found || (k && mg && Array.isArray(mg[k]) ? mg[k] : k && Array.isArray(data[k]) ? data[k] : null);
+    }, null);
+    b.live = !!src;
+    boardRows[b.key] = (src || []).filter(function (r) { return r && r.name; })
       .map(function (r) { return { name: String(r.name), score: Number(r.score) || 0 }; });
   });
   function boardsOf(group) {
@@ -95,6 +102,8 @@
   var boardPick = {};
   boardPick[MINIGAMES] = boardsOf(MINIGAMES)[0];
   boardPick[EVENTS] = boardsOf(EVENTS)[0];
+  boardPick[QUESTS] = boardsOf(QUESTS)[0];
+  var hasQuests = boardsOf(QUESTS).some(function (b) { return b.live; });
 
   var $ = function (id) { return document.getElementById(id); };
   function el(tag, cls, text) {
@@ -112,7 +121,7 @@
     });
   }
   function skillName(skill) {
-    return skill === GUILDS ? "Guilds" : skill === MINIGAMES ? "Minigames" : skill === EVENTS ? "Events" :
+    return skill === GUILDS ? "Guilds" : skill === MINIGAMES ? "Minigames" : skill === EVENTS ? "Events" : skill === QUESTS ? "Quest Points" :
       skill < 0 ? "Overall" : SKILLS[skill];
   }
 
@@ -124,7 +133,7 @@
     var b = el("button", "hs-skill");
     b.type = "button";
     var dot = el("span", "hs-dot");
-    dot.style.background = i === GUILDS ? "#9b6fd6" : i === MINIGAMES ? "#1d8a8a" : i === EVENTS ? "#ff9a3c" :
+    dot.style.background = i === GUILDS ? "#9b6fd6" : i === MINIGAMES ? "#1d8a8a" : i === EVENTS ? "#ff9a3c" : i === QUESTS ? "#4f8fd6" :
       i < 0 ? "#f2b632" : COLORS[i];
     b.appendChild(dot);
     b.appendChild(document.createTextNode(skillName(i)));
@@ -135,6 +144,7 @@
   list.appendChild(skillButton(GUILDS));   // first, as in the game's Hiscores window
   list.appendChild(skillButton(MINIGAMES));
   if (boardsOf(EVENTS).length) list.appendChild(skillButton(EVENTS));
+  if (hasQuests) list.appendChild(skillButton(QUESTS));
   list.appendChild(skillButton(-1));
   SKILLS.forEach(function (_, i) { list.appendChild(skillButton(i)); });
 
@@ -148,7 +158,7 @@
     $("hs-title").textContent = skillName(skill) + " Hiscores";
     $("hs-player").hidden = true;
     $("hs-table-wrap").hidden = false;
-    var isBoard = skill === MINIGAMES || skill === EVENTS;
+    var isBoard = skill === MINIGAMES || skill === EVENTS || skill === QUESTS;
     $("hs-search-form").style.display = skill === GUILDS || isBoard ? "none" : "";   // the search finds players' skills
     var body = $("hs-rows");
     body.textContent = "";
@@ -220,8 +230,8 @@
   function showBoardPicker(group) {
     var row = $("hs-boards");
     row.textContent = "";
-    row.hidden = group == null;
-    if (group == null) return;
+    row.hidden = group == null || boardsOf(group).length < 2;   // (a tab with one board needs no picker)
+    if (row.hidden) return;
     boardsOf(group).forEach(function (b) {
       var btn = el("button", "hs-board" + (boardPick[group] === b ? " on" : ""), b.name);
       btn.type = "button";
@@ -323,5 +333,6 @@
   var params = new URLSearchParams(location.search), q = params.get("player");
   var table = params.get("table");
   if (q) { $("hs-search").value = q; lookup(q); }
-  else { show(table === "guilds" ? GUILDS : table === "minigames" ? MINIGAMES : table === "events" && boardsOf(EVENTS).length ? EVENTS : -1, 1); }
+  else { show(table === "guilds" ? GUILDS : table === "minigames" ? MINIGAMES : table === "events" && boardsOf(EVENTS).length ? EVENTS :
+    table === "quests" && hasQuests ? QUESTS : -1, 1); }
 })();
