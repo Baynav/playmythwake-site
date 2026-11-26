@@ -1,10 +1,10 @@
 /* Mythwake hiscores - written by the game server (Server/src/Hiscores.cs). Do not edit by hand. */
 window.MYTHWAKE_HISCORES = {
-  updated: "2026-11-26 19:38 UTC",
+  updated: "2026-11-26 19:49 UTC",
   online: 2,
   players: [
-    { name: "Vedder96", skills: [[20, 51701], [20, 48581], [21, 65255], [20, 48795], [22, 73997], [19, 44697], [18, 35713], [20, 50949], [14, 13441], [16, 23853], [18, 33994], [18, 32734], [10, 4654], [17, 27526]] },
-    { name: "Bay", skills: [[1, 36], [25, 124753], [20, 55970], [12, 8621], [21, 66341], [21, 68743], [11, 6467], [15, 16588], [24, 105190], [19, 45896], [11, 6108], [18, 35908], [22, 73597], [12, 7241]] },
+    { name: "Vedder96", skills: [[20, 51701], [20, 48581], [21, 65255], [20, 48795], [22, 73997], [19, 44697], [18, 35713], [20, 52049], [14, 13441], [16, 23853], [18, 33994], [18, 32734], [10, 4946], [17, 27526]] },
+    { name: "Bay", skills: [[1, 36], [25, 124753], [20, 56614], [12, 8621], [21, 66553], [21, 68743], [11, 6467], [15, 16624], [24, 105190], [19, 45896], [11, 6108], [18, 35908], [22, 73597], [12, 7241]] },
     { name: "Erc", skills: [[11, 5647], [23, 96875], [9, 2657], [14, 14158], [19, 41727], [20, 51455], [16, 21641], [13, 12117], [17, 30423], [17, 29044], [16, 21797], [15, 17895], [5, 636], [12, 7032]] },
     { name: "Mckdank", skills: [[23, 94556], [10, 4022], [20, 49848], [22, 74509], [22, 77622], [15, 15751], [8, 1642], [16, 22842], [12, 7487], [13, 12046], [5, 658], [6, 837], [9, 2821], [14, 13829]] },
     { name: "Wizen", skills: [[1, 29], [1, 3], [16, 23145], [3, 192], [13, 11155], [6, 1031], [7, 1445], [5, 588], [7, 1565], [6, 855], [6, 764], [9, 2480], [5, 611], [5, 585]] },
@@ -47,10 +47,10 @@ window.MYTHWAKE_HISCORES = {
     duel_wins: [],
     rush_best_streak: [],
     rush_orders: [],
-    fogwrack_returns: [{ name: "Vedder96", score: 117 }, { name: "Bay", score: 82 }],
+    fogwrack_returns: [{ name: "Vedder96", score: 133 }, { name: "Bay", score: 89 }],
     fogborn_defeated: [],
     lanterns_lit: [{ name: "Vedder96", score: 3 }, { name: "Bay", score: 3 }, { name: "Erc", score: 3 }, { name: "JaiDGreat", score: 2 }],
-    wreck_searches: [{ name: "Erc", score: 11 }],
+    wreck_searches: [{ name: "Erc", score: 11 }, { name: "Bay", score: 1 }],
     caravans_escorted: []
   },
   quests: [{ name: "Erc", score: 20 }, { name: "Vedder96", score: 19 }, { name: "Bay", score: 18 }, { name: "Mckdank", score: 14 }, { name: "Wizen", score: 12 }, { name: "JaiDGreat", score: 7 }, { name: "Seraaphik", score: 6 }, { name: "duu", score: 4 }, { name: "XenosVires", score: 3 }, { name: "Valeria", score: 3 }, { name: "SpllCst", score: 3 }, { name: "Chosen", score: 2 }, { name: "oligi", score: 1 }, { name: "strelly", score: 1 }]
