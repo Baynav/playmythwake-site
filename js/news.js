@@ -30,6 +30,8 @@ The game closes for a minute during the update, with a countdown first; Microsof
 
 Thanks for every report: keep them coming through Menu > Report a bug or the Discord.
 
+**Full notes with pictures:** https://playmythwake.com/minigames-and-events
+
 ## Highlights
 - **The Duel Ring.** Climb a ten-rung ladder in Tolvadden's arena against Echoes of blades, archers and sorcerers near your level, or duel other players, for Renown and the Duellist's outfit.
 - **The Undermarket.** Run Fence Doyle's smugglers' kitchen under Sloughton: gather, make and load five carts against the clock while the Watch's lanterns sweep the cellar.

@@ -1,0 +1,118 @@
+/* A big update's own page (minigames-and-events.html, built by publish/make-update-page.py). On top of site.css. */
+
+.u-page { padding: 0 0 18px; background: var(--parch); }
+.u-back { margin: 0; padding: 10px 18px; font-size: .95rem; }
+.u-back-end { padding-top: 0; }
+
+/* ---- the hero: the update's art, with its name over the bottom ---- */
+.u-hero {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  aspect-ratio: 64 / 27;          /* 2560 x 1080 */
+  min-height: 240px;
+  background: var(--night2);
+  border-top: 4px solid var(--ink);
+  border-bottom: 4px solid var(--ink);
+  overflow: hidden;
+}
+.u-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.u-hero::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(rgba(14, 34, 38, 0) 40%, rgba(14, 34, 38, .55) 70%, rgba(14, 34, 38, .92));
+}
+.u-hero-text { position: absolute; z-index: 1; left: 0; right: 0; bottom: 0; padding: 0 24px 20px; color: var(--parch); }
+.u-kicker {
+  display: inline-block; margin: 0 0 6px; padding: 3px 10px 1px;
+  background: var(--gold); color: var(--ink); border: 2px solid var(--ink); border-radius: 6px;
+  font-family: var(--title); font-size: .95rem; letter-spacing: .06em; text-transform: uppercase;
+}
+.u-hero h1 { margin: 0; font-size: clamp(1.7rem, 4.6vw, 2.9rem); color: var(--gold); text-shadow: 0 3px 0 var(--ink), 0 0 18px rgba(0, 0, 0, .6); }
+.u-sub { margin: 4px 0 0; font-family: var(--title); font-size: clamp(1rem, 2.2vw, 1.3rem); text-shadow: 0 2px 0 var(--ink); }
+
+/* ---- the jump list ---- */
+.u-jump {
+  display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;
+  padding: 10px 14px; background: var(--parch2); border-bottom: 3px solid var(--ink);
+}
+.u-jump a {
+  padding: 4px 12px 2px; border: 2px solid var(--ink); border-radius: 999px; background: var(--parch);
+  color: var(--teal); font-family: var(--title); font-weight: normal; text-decoration: none;
+}
+.u-jump a:hover { background: var(--gold); color: var(--ink); }
+
+/* ---- the body ---- */
+.u-body { padding: 18px 24px 4px; max-width: 860px; margin: 0 auto; }
+.u-body p { margin: 0 0 12px; }
+.u-lead { font-size: 1.25rem; font-weight: 700; color: var(--teal); }
+.u-body ul { margin: 0 0 12px; padding-left: 22px; }
+.u-body li { margin: 0 0 6px; }
+.u-body li ul { margin: 6px 0 0; }
+.u-section { margin: 22px 0 0; scroll-margin-top: 10px; }
+.u-h2 {
+  margin: 0 0 12px; padding: 6px 14px 3px;
+  background: var(--teal); color: var(--gold); border: 3px solid var(--ink); border-radius: 8px;
+  font-size: 1.6rem; text-shadow: 0 2px 0 var(--ink);
+}
+.u-h3 { margin: 18px 0 8px; font-size: 1.35rem; color: var(--teal); scroll-margin-top: 10px; }
+.u-sub-section { scroll-margin-top: 10px; }
+.u-sub-section + .u-sub-section { margin-top: 6px; }
+.u-more { font-weight: 700; }
+
+.u-highlights ul { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.u-highlights li {
+  margin: 0; padding: 10px 12px; background: var(--parch2); border: 2px solid var(--ink); border-radius: 8px;
+  box-shadow: 0 3px 0 var(--ink);
+}
+.u-highlights li strong { display: block; font-family: var(--title); font-weight: normal; font-size: 1.15rem; color: var(--teal); }
+
+.u-play { margin: 16px 0 4px; padding: 12px 14px; text-align: center; background: var(--parch2); border: 2px solid var(--ink); border-radius: 8px; }
+.u-play p { margin: 0 0 10px; font-weight: 700; color: var(--teal); }
+
+/* ---- banners and screenshots ---- */
+.u-banner, .u-shot { margin: 18px 0 10px; }
+.u-banner img, .u-shot img {
+  display: block; width: 100%; height: auto; border: 3px solid var(--ink); border-radius: 8px; background: var(--night2);
+}
+.u-banner img { aspect-ratio: 4 / 1; object-fit: cover; box-shadow: 0 4px 0 var(--ink); }
+.u-banner + .u-h3 { margin-top: 10px; }
+.u-shot img { aspect-ratio: 16 / 9; object-fit: cover; }
+.u-shot figcaption { margin-top: 5px; font-size: .9rem; color: var(--muted); text-align: center; }
+
+/* ---- the reward tables ---- */
+.u-table-wrap { margin: 0 0 14px; border: 3px solid var(--ink); border-radius: 8px; overflow: hidden; background: var(--parch); }
+.u-table { width: 100%; border-collapse: collapse; font-size: .95rem; }
+.u-table th {
+  padding: 7px 10px 5px; background: var(--teal); color: var(--parch); text-align: left;
+  font-family: var(--title); font-weight: normal; font-size: 1.05rem;
+}
+.u-table td { padding: 8px 10px; border-top: 2px solid var(--parch3); vertical-align: middle; }
+.u-table tbody tr:nth-child(even) td { background: rgba(234, 219, 179, .45); }
+.u-item { min-width: 200px; font-weight: 700; }
+.u-item-in { display: flex; align-items: center; gap: 10px; }
+.u-item small { display: block; font-weight: 400; color: var(--muted); font-size: .85rem; }
+.u-icon {
+  width: 48px; height: 48px; flex: none; padding: 2px;
+  background: var(--night2); border: 2px solid var(--ink); border-radius: 6px;
+}
+.u-icons { display: grid; grid-template-columns: repeat(3, 30px); gap: 2px; flex: none; }
+.u-icons .u-icon { width: 30px; height: 30px; padding: 1px; border-width: 1px; border-radius: 4px; }
+.u-cost { white-space: nowrap; font-weight: 700; color: var(--teal); }
+
+@media (max-width: 700px) {
+  .u-body { padding: 14px 16px 4px; }
+  .u-hero { aspect-ratio: auto; height: 260px; }
+  .u-hero-text { padding: 0 16px 14px; }
+  .u-highlights ul { grid-template-columns: 1fr; }
+  .u-lead { font-size: 1.1rem; }
+  /* tables become cards */
+  .u-table thead { display: none; }
+  .u-table, .u-table tbody, .u-table tr, .u-table td { display: block; width: 100%; }
+  .u-table tr { padding: 8px 12px; border-top: 2px solid var(--parch3); }
+  .u-table tbody tr:first-child { border-top: 0; }
+  .u-table td { padding: 3px 0; border: 0; background: none !important; }
+  .u-table tbody tr:nth-child(even) { background: rgba(234, 219, 179, .45); }
+  .u-table td[data-label]::before { content: attr(data-label) ": "; font-weight: 700; color: var(--muted); }
+  .u-cost { white-space: normal; }
+  .u-item { padding-bottom: 6px !important; }
+}
