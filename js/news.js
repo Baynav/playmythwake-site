@@ -13,6 +13,63 @@
 
 window.MYTHWAKE_NEWS = [
   {
+    date: "2026-11-26",
+    category: "Patch notes",
+    title: "Quietside Keepers - Fixes and Polish for the Minigames & Events Update",
+    published: "2026-11-26T19:40:51Z",
+    body: `
+A follow-up to yesterday's update, built from your reports. Quietside gets a deposit box and proper lantern-keeping, the world events tell everyone when they start, and a long list of fixes and balance changes.
+
+This update needs the new version of the game: the Microsoft Store and the launcher both update you, and an old copy is asked to update before it can log in. The game closes for a minute while it goes in.
+
+Mythwake is available on Windows (Microsoft Store) and Android (Google Play).
+
+Thanks for every report: keep them coming through Menu > Report a bug or the Discord.
+
+## Highlights
+- **The first deposit box.** Drop your catch straight into your bank at Quietside Landing.
+- **Lantern-keeping makes sense.** Relight a buoy that's gone out with a Tinderbox; replace one a wave has smashed.
+- **World events announce themselves.** Everyone in the world hears when the Salt Caravan or the Wreck at Low Water starts.
+- **Kinder early Cooking.** Burning stops 5 levels above a recipe (was 25).
+
+## New
+- **Deposit box at Quietside Landing**, by the camp fire. Deposit items, or your whole bag, straight into your bank. You can't withdraw from it.
+- **A Quest Points hiscore**, in the game and on the website.
+- **A workbench at Quietside Landing**, so you can make Buoy Lanterns and Quiet Lanterns on the spot.
+
+## Improvements
+- **Lantern-keeping at Quietside:**
+  - A buoy that's gone out is relit with a Tinderbox from your bag; nothing is used up. 5 Woodworking XP (8 on the outer ring).
+  - About 1 in 5 times a buoy goes dark, a wave smashes it instead. Fit a new Buoy Lantern (inner ring) or Quiet Lantern (outer ring), then light it: 25 Woodworking XP (45 on the outer ring) (was 15 / 20 for every relight, and every relight used a lantern).
+  - "Lanterns on the Water" now gives you a Tinderbox.
+- **More driftwood at Quietside:** 12 more piles on the shore and 6 floating in the shallows, all clear of the fishing spots.
+- **World event announcements** now reach everyone in the overworld: the Salt Caravan's 5-minute warning and start, and the Wreck at Low Water as the tide goes out and comes back.
+- **The event and Undermarket panels** sit in the top-left corner on PC, show only while you're taking part, and can be moved and folded. They no longer cover the quest tracker.
+- **The Undermarket:**
+  - Carts ask for at most 2 different goods (was 3).
+  - Rough materials and goods stack to 16 (was 50).
+  - The Watch's lanterns patrol only the open floor between the gathering room, the stations and the carts. You're safe while gathering, crafting and loading.
+  - Fewer chat lines: no message for every cart coming and going, and no counts while gathering.
+- **The Update button** now closes the game once the update starts.
+- **Zone moods fade in and out smoothly** when you cross into a new area.
+
+## Balance
+- **Potions and food** work the same in the Wilderness as everywhere else: health potions 10 s (was 30 s there), mana potions 2 s (was 22 s there).
+- **Archery Potion:** Feverfew + Feather (was Feverfew + Bat Wing). Feverfew + Bat Wing still works as a second recipe; the skill guide shows both.
+- **Cooking:** the burn chance at a recipe's level is unchanged, but it falls to nothing 5 levels above it (was 25).
+- **Fogwrack's fog tide** now stays in for 2 minutes, with a minute's break between tides (was 1 minute in, then 2 minutes out).
+- **Driftwood and Sunken Timber** give 3-6 before a pile is used up (was 1-3).
+- **Raider gear:** every caravan raider can now drop one of the six raider pieces, rarer the lower the raider: the Lv 32 Raider Ravager 1 in 128, the Lv 28 raiders 1 in 256, the Lv 24 Ravager 1 in 384, the Lv 20 raiders 1 in 512 (was the Lv 32 Ravager only).
+
+## Fixes
+- Escorted caravans now count on the hiscores, and wreck searches show up sooner.
+- Floating Wrack at Fogwrack is pulled out by hand: it no longer asks for a fishing net. Deep Wrack needs only the Wrack-hook.
+- Every plank of the Quietside jetty can be walked on.
+- The cooked Quietfin and Mistcarp icons no longer have a leaf under them.
+- An old copy of the game is now asked to update instead of being let into a world that doesn't match.
+`
+  },
+  {
     date: "2026-11-25",
     category: "Patch notes",
     title: "The Minigames & Events Update - Three Minigames, Two World Events and New Shores to Explore",

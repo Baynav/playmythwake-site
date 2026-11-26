@@ -6,12 +6,20 @@
     <description>News and patch notes for Mythwake, an online 2D RPG.</description>
     <language>en</language>
     <atom:link href="https://playmythwake.com/news.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 25 Nov 2026 18:51:07 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 19:40:51 +0000</lastBuildDate>
     <image>
       <url>https://playmythwake.com/img/apple-touch-icon.png</url>
       <title>Mythwake News</title>
       <link>https://playmythwake.com/news</link>
     </image>
+    <item>
+      <title>Quietside Keepers - Fixes and Polish for the Minigames &amp; Events Update</title>
+      <link>https://playmythwake.com/news#post-2026-11-26-quietside-keepers-fixes-and-polish-for-the-minigames-events-update</link>
+      <guid isPermaLink="true">https://playmythwake.com/news#post-2026-11-26-quietside-keepers-fixes-and-polish-for-the-minigames-events-update</guid>
+      <pubDate>Thu, 26 Nov 2026 19:40:51 +0000</pubDate>
+      <category>Patch notes</category>
+      <description>&lt;p&gt;A follow-up to yesterday&amp;#39;s update, built from your reports. Quietside gets a deposit box and proper lantern-keeping, the world events tell everyone when they start, and a long list of fixes and balance changes.&lt;/p&gt;&lt;p&gt;This update needs the new version of the game: the Microsoft Store and the launcher both update you, and an old copy is asked to update before it can log in. The game closes for a minute while it goes in.&lt;/p&gt;&lt;p&gt;Mythwake is available on Windows (Microsoft Store) and Android (Google Play).&lt;/p&gt;&lt;p&gt;Thanks for every report: keep them coming through Menu &amp;gt; Report a bug or the Discord.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Highlights&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;The first deposit box.&lt;/strong&gt; Drop your catch straight into your bank at Quietside Landing.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Lantern-keeping makes sense.&lt;/strong&gt; Relight a buoy that&amp;#39;s gone out with a Tinderbox; replace one a wave has smashed.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;World events announce themselves.&lt;/strong&gt; Everyone in the world hears when the Salt Caravan or the Wreck at Low Water starts.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Kinder early Cooking.&lt;/strong&gt; Burning stops 5 levels above a recipe (was 25).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://playmythwake.com/news#post-2026-11-26-quietside-keepers-fixes-and-polish-for-the-minigames-events-update"&gt;Read the full notes&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Minigames &amp; Events Update - Three Minigames, Two World Events and New Shores to Explore</title>
       <link>https://playmythwake.com/news#post-2026-11-25-the-minigames-events-update-three-minigames-two-world-events-and-new-shores-to-explore</link>
