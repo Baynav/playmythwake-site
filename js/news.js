@@ -14,29 +14,80 @@
 window.MYTHWAKE_NEWS = [
   {
     date: "2026-11-26",
-    category: "News",
-    title: "Mythwake is now on Android",
+    category: "Patch notes",
+    title: "Quietside Keepers - Outfits, the Wreck Boat and Fixes",
     published: "2026-11-26T19:40:57Z",
     body: `
-Mythwake is out on Google Play. Take the whole world with you: the same account, the same character and the same world as on PC, in your pocket.
+A follow-up to the Minigames & Events Update, built from your reports. Quietside gets a deposit box and proper lantern-keeping, the world events tell everyone when they start, and a long list of fixes and balance changes.
 
-Get it now: https://play.google.com/store/apps/details?id=com.playmythwake.mythwake
+**Updated Nov 27:** every minigame outfit now has a set bonus worth wearing, Keverne rows you out to the wreck, Fogreach Pier goes deeper, walking slides along bridge edges, and small updates now download right at the title screen, so fixes reach you sooner.
+
+This update needs the new version of the game: the Microsoft Store and the launcher both update you, and an old copy is asked to update before it can log in. The game closes for a minute while it goes in.
+
+Mythwake is available on Windows (Microsoft Store) and Android (Google Play).
+
+Thanks for every report: keep them coming through Menu > Report a bug or the Discord.
 
 ## Highlights
-- **One account, one world, cross-play with PC.** Log in with your Mythwake account and pick up right where you left off: your character, skills, gear and bank come with you, and Android and Windows players fight, trade, party and climb the hiscores together.
-- **Made for touch.** Tap to click, hold for the item menu, drag to move items and scroll. Prefer buttons? Plug in or pair a controller.
-- **Quick to start.** Install it from Google Play and sign up with your email in the game, or log in with the account you already have.
+- **Every outfit has a set bonus worth wearing** (Nov 27). The Duellist's outfit is now real gear for any combat style, the full Keeper's outfit fishes faster, and the full Rogue's outfit keeps the Watch off your goods.
+- **A boat to the wreck** (Nov 27). While the Wreck at Low Water is on, Keverne rows you from the Fogwrack strand straight to the Polgarra spit.
+- **The first deposit box.** Drop your catch straight into your bank at Quietside Landing.
+- **Lantern-keeping makes sense.** Relight a buoy that's gone out with a Tinderbox; replace one a wave has smashed.
+- **World events announce themselves.** Everyone in the world hears when the Salt Caravan or the Wreck at Low Water starts.
+- **Kinder early Cooking.** Burning stops 5 levels above a recipe (was 25).
+- **Faster updates** (Nov 27). Small updates download at the title screen ("Downloading update...") instead of waiting for a new store version.
 
-## New here? Catch up on the latest update
-- Mythwake just had its biggest update yet: three minigames (the Duel Ring, the Undermarket and Fogwrack), two world events (the Salt Caravan and the Wreck at Low Water) and new shores to explore. See it all here: https://playmythwake.com/minigames-and-events.html
+## New
+- **Deposit box at Quietside Landing**, by the camp fire. Deposit items, or your whole bag, straight into your bank. You can't withdraw from it.
+- **A Quest Points hiscore**, in the game and on the website.
+- **A workbench at Quietside Landing**, so you can make Buoy Lanterns and Quiet Lanterns on the spot.
+- **Keverne's wreck boat:** from the Fogwrack strand to the Polgarra spit, only while the Wreck at Low Water is on, for 15 coins. It's one way: you walk back.
+- **Fogreach Pier** reaches further out to sea and ends in a T, with 6 Deep Wrack spots along its arms.
+- **The Tide Bell** now stands on the Fogwrack strand and tolls when the fog tide comes in, with four strokes you can hear across the strand.
 
-## A thank-you
-- Massively Overpowered featured Mythwake in "MMOs You've Never Heard Of": https://massivelyop.com/2026/11/23/mmos-youve-never-heard-of-mythwake-saltwarden-online-and-lugh-world/ Thank you, Massively Overpowered! And thank you, Jai, one of our community, for spotting it and sharing it in our Discord. Welcome to everyone joining us from there.
+## Improvements
+- **Lantern-keeping at Quietside:**
+  - A buoy that's gone out is relit with a Tinderbox from your bag; nothing is used up. 5 Woodworking XP (8 on the outer ring).
+  - About 1 in 5 times a buoy goes dark, a wave smashes it instead. Fit a new Buoy Lantern (inner ring) or Quiet Lantern (outer ring), then light it: 25 Woodworking XP (45 on the outer ring) (was 15 / 20 for every relight, and every relight used a lantern).
+  - "Lanterns on the Water" now gives you a Tinderbox.
+- **More driftwood at Quietside:** 12 more piles on the shore and 6 floating in the shallows, all clear of the fishing spots.
+- **World event announcements** now reach everyone in the overworld: the Salt Caravan's 5-minute warning and start, and the Wreck at Low Water as the tide goes out and comes back.
+- **One panel stack.** The event, Undermarket, Fogwrack, Quiet mist, Duel Ring and ferry panels share one stack in the top-left corner on PC. They show only while you're taking part, and you can move and fold them; they no longer cover the quest tracker. On phones they line up along the top.
+- **Party frames** sit at the middle left on PC, above the chat.
+- **Walking slides along edges.** Walking into a bridge's edge, a jetty's edge or any angled wall now slides you along it instead of stopping you.
+- **Hauling wrack:** one press hauls a pile until it's used up, like Quietside's driftwood. The prompts read "Pull out the Floating Wrack" and "Hook the Deep Wrack".
+- **Hiscores window:** Skills come first (Total level is the default), then Guilds, Minigames and Events, in the same order as the website.
+- **Phones:** one tap is always one click. Taps no longer count twice, so toggles stay on and buttons don't miss.
+- **The Undermarket:**
+  - Carts ask for at most 2 different goods (was 3).
+  - Rough materials and goods stack to 16 (was 50).
+  - The Watch's lanterns patrol only the open floor between the gathering room, the stations and the carts. You're safe while gathering, crafting and loading.
+  - Fewer chat lines: no message for every cart coming and going, and no counts while gathering.
+- **The Update button** now closes the game once the update starts.
+- **Zone moods fade in and out smoothly** when you cross into a new area.
 
-## Where to play
-- Mythwake is available on Windows (Microsoft Store) and Android (Google Play). Find direct links at playmythwake.com/download.
-- It's still the Open Beta: new land, bosses and features keep arriving with updates, on both.
-- Tell us how it plays on your phone: Menu > Report a bug, or the Discord.
+## Balance
+- **Duellist's outfit:** real gear for any combat style, Combat 28, and no Defence needed. It has 60 armour in all (was 12). Wearing all five gives +5% damage, +2.5% crit chance and +2% evasion. The full set also gives 20% faster HP and MP regeneration out of combat (was HP only) and a 12% shorter dodge cooldown.
+- **Keeper's outfit (full set):** fishing and wrack hauls are 10% faster (was 0.5% more cleansing XP per piece).
+- **Rogue's outfit (full set):** 10% more of Doyle's coins, and the Watch can't take your goods (was 2.5% more XP and 10% more coins).
+- **Fogwrack piles:** each Floating or Deep Wrack pile gives 3-6 pulls (was 1), and an emptied pile floats back after 20 seconds (was 12 seconds per piece).
+- **Fogborn:** a deep pull raises one 1 time in 20 (was 1 in 10).
+- **Morvoren's shop:** Wrack-hook 400 (was 200), Keeper's Thimble 600 (was 300), the Keeper's outfit 240 a piece (was 120).
+- **Potions and food** work the same in the Wilderness as everywhere else: health potions 10 s (was 30 s there), mana potions 2 s (was 22 s there).
+- **Archery Potion:** Feverfew + Feather (was Feverfew + Bat Wing). Feverfew + Bat Wing still works as a second recipe; the skill guide shows both.
+- **Cooking:** the burn chance at a recipe's level is unchanged, but it falls to nothing 5 levels above it (was 25).
+- **Fogwrack's fog tide** now stays in for 2 minutes, with a minute's break between tides (was 1 minute in, then 2 minutes out).
+- **Driftwood and Sunken Timber** give 3-6 before a pile is used up (was 1-3).
+- **Raider gear:** every caravan raider can now drop one of the six raider pieces, rarer the lower the raider: the Lv 32 Raider Ravager 1 in 128, the Lv 28 raiders 1 in 256, the Lv 24 Ravager 1 in 384, the Lv 20 raiders 1 in 512 (was the Lv 32 Ravager only).
+
+## Fixes
+- Escorted caravans now count on the hiscores, and wreck searches show up sooner.
+- Floating Wrack at Fogwrack is pulled out by hand: it no longer asks for a fishing net. Deep Wrack needs only the Wrack-hook.
+- Every plank of the Quietside jetty can be walked on.
+- The cooked Quietfin and Mistcarp icons no longer have a leaf under them.
+- An old copy of the game is now asked to update instead of being let into a world that doesn't match.
+- Fixed getting stuck when walking straight along a narrow jetty or an angled bridge deck.
+- Fixed phone taps sometimes switching a setting on and straight back off.
 `
   },
   {
