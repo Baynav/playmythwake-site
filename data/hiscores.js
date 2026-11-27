@@ -1,9 +1,9 @@
 /* Mythwake hiscores - written by the game server (Server/src/Hiscores.cs). Do not edit by hand. */
 window.MYTHWAKE_HISCORES = {
-  updated: "2026-11-27 16:25 UTC",
+  updated: "2026-11-27 16:35 UTC",
   online: 2,
   players: [
-    { name: "Vedder96", skills: [[20, 51701], [20, 48581], [22, 84345], [20, 48795], [22, 80359], [19, 44697], [18, 36385], [21, 64143], [15, 16190], [16, 23853], [18, 33994], [18, 32734], [12, 8094], [17, 27576]] },
+    { name: "Vedder96", skills: [[20, 51701], [20, 48581], [22, 84345], [20, 48795], [22, 80359], [19, 44697], [18, 36385], [21, 64251], [15, 16634], [16, 23853], [18, 33994], [18, 32734], [12, 8094], [17, 28298]] },
     { name: "Bay", skills: [[1, 36], [25, 124753], [20, 57059], [12, 8621], [21, 66698], [21, 69783], [12, 7417], [16, 23524], [24, 106790], [19, 45896], [11, 6172], [18, 35926], [22, 76098], [12, 7241]] },
     { name: "Erc", skills: [[11, 5647], [23, 96875], [9, 2657], [14, 14158], [19, 41727], [20, 51455], [16, 21641], [13, 12117], [17, 30423], [17, 29044], [16, 21797], [15, 17895], [5, 636], [12, 7032]] },
     { name: "Mckdank", skills: [[23, 94556], [10, 4022], [20, 49848], [22, 74509], [22, 77622], [15, 15751], [8, 1642], [16, 22842], [12, 7487], [13, 12046], [5, 658], [6, 837], [9, 2821], [14, 13829]] },
@@ -56,5 +56,5 @@ window.MYTHWAKE_HISCORES = {
     wreck_searches: [{ name: "Erc", score: 11 }, { name: "Bay", score: 1 }],
     caravans_escorted: []
   },
-  quests: [{ name: "Vedder96", score: 24 }, { name: "Erc", score: 20 }, { name: "Bay", score: 18 }, { name: "Mckdank", score: 14 }, { name: "Wizen", score: 12 }, { name: "JaiDGreat", score: 8 }, { name: "Seraaphik", score: 6 }, { name: "duu", score: 4 }, { name: "XenosVires", score: 3 }, { name: "Valeria", score: 3 }, { name: "SpllCst", score: 3 }, { name: "Chosen", score: 2 }, { name: "oligi", score: 1 }, { name: "strelly", score: 1 }]
+  quests: [{ name: "Vedder96", score: 25 }, { name: "Erc", score: 20 }, { name: "Bay", score: 18 }, { name: "Mckdank", score: 14 }, { name: "Wizen", score: 12 }, { name: "JaiDGreat", score: 8 }, { name: "Seraaphik", score: 6 }, { name: "duu", score: 4 }, { name: "XenosVires", score: 3 }, { name: "Valeria", score: 3 }, { name: "SpllCst", score: 3 }, { name: "Chosen", score: 2 }, { name: "oligi", score: 1 }, { name: "strelly", score: 1 }]
 };
