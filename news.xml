@@ -6,12 +6,20 @@
     <description>News and patch notes for Mythwake, an online 2D RPG.</description>
     <language>en</language>
     <atom:link href="https://playmythwake.com/news.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 26 Nov 2026 19:40:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 17:41:28 +0000</lastBuildDate>
     <image>
       <url>https://playmythwake.com/img/apple-touch-icon.png</url>
       <title>Mythwake News</title>
       <link>https://playmythwake.com/news</link>
     </image>
+    <item>
+      <title>The Undermarket Rework and Quests on the Map</title>
+      <link>https://playmythwake.com/news#post-2026-11-27-the-undermarket-rework-and-quests-on-the-map</link>
+      <guid isPermaLink="true">https://playmythwake.com/news#post-2026-11-27-the-undermarket-rework-and-quests-on-the-map</guid>
+      <pubDate>Fri, 27 Nov 2026 17:41:28 +0000</pubDate>
+      <category>Patch notes</category>
+      <description>&lt;p&gt;A quick update built from your reports and our own play-testing. The Undermarket plays the way it should: gathering keeps going, every station takes orders, and your streak is now yours to manage. Your active quests also show on the world map, every campfire cooks, and a handful of characters now stand where their quests say they are.&lt;/p&gt;&lt;p&gt;Please update the game from the Microsoft Store or Google Play. Found something odd? Use Menu &amp;gt; Report a bug or tell us on the Discord.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Highlights&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Your streak, your pace.&lt;/strong&gt; In the Undermarket, the streak now runs on the carts you load. Take on one cart at a time or juggle several: miss any cart you&amp;#39;ve loaded into and the streak is gone.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Gathering keeps going.&lt;/strong&gt; One press at the Old Seam, the Rotten Beams or the Rag Pile keeps gathering. Collect as much as you like, whatever the carts want.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Metal goods are back.&lt;/strong&gt; Carts now ask for Smuggler&amp;#39;s Daggers and Strongbox Hinges from the Smuggler&amp;#39;s Anvil, not just wood and cloth.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Quests on the map.&lt;/strong&gt; The world map shows where each active quest wants you next.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Cook at any campfire.&lt;/strong&gt; Every campfire in the world is now a cooking fire.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://playmythwake.com/news#post-2026-11-27-the-undermarket-rework-and-quests-on-the-map"&gt;Read the full notes&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Quietside Keepers - Outfits, the Wreck Boat and Fixes</title>
       <link>https://playmythwake.com/news#post-2026-11-26-quietside-keepers-outfits-the-wreck-boat-and-fixes</link>

@@ -13,6 +13,46 @@
 
 window.MYTHWAKE_NEWS = [
   {
+    date: "2026-11-27",
+    category: "Patch notes",
+    title: "The Undermarket Rework and Quests on the Map",
+    published: "2026-11-27T17:41:28Z",
+    body: `
+A quick update built from your reports and our own play-testing. The Undermarket plays the way it should: gathering keeps going, every station takes orders, and your streak is now yours to manage. Your active quests also show on the world map, every campfire cooks, and a handful of characters now stand where their quests say they are.
+
+Please update the game from the Microsoft Store or Google Play. Found something odd? Use Menu > Report a bug or tell us on the Discord.
+
+## Highlights
+- **Your streak, your pace.** In the Undermarket, the streak now runs on the carts you load. Take on one cart at a time or juggle several: miss any cart you've loaded into and the streak is gone.
+- **Gathering keeps going.** One press at the Old Seam, the Rotten Beams or the Rag Pile keeps gathering. Collect as much as you like, whatever the carts want.
+- **Metal goods are back.** Carts now ask for Smuggler's Daggers and Strongbox Hinges from the Smuggler's Anvil, not just wood and cloth.
+- **Quests on the map.** The world map shows where each active quest wants you next.
+- **Cook at any campfire.** Every campfire in the world is now a cooking fire.
+
+## New
+- **The world map marks your active quests**: the person to talk to, or the spot to use, for each quest's current step. Click a quest in the tracker or the quest log to see it on the map.
+- **Polgarra Cove** is named on the world map.
+- **41 campfires** across the world now work as cooking fires, with the same recipes, burn chances and XP as any other campfire.
+
+## Improvements
+- **The Undermarket:**
+  - **The streak** runs on the carts you load into, each on its own timer (was a single 150-second timer between carts). Carts you never touched don't count.
+  - **Your streak carts are highlighted:** an amber rim and a "your streak" tag over the cart, turning red in its last 10 seconds. The panel shows how many carts you're on.
+  - **One press keeps gathering**, with the same time and XP for each item as before. Gather as much as you like: it stops only when a stack is full (16), your bag is full, or you move.
+  - **Every good has its own colour**, so a cart's order matches the station's list at a glance: steel-blue daggers, violet hinges, red crate lids, golden staves, blue wraps and teal sacks. Seam Iron, Cellar Timber and Smuggler's Rags are recoloured too.
+  - **Messages like "This cart wants..." show over your head** for a moment instead of in chat, and each is said once.
+- **The Shut House** quest says exactly where the chest and the house are.
+- **Fisherman Col** now stands by the Shore Cottages in Pellow, next to the Shut House his quest is about.
+
+## Fixes
+- Fixed carts never asking for metal goods. The Smuggler's Anvil was too far from Doyle's pad to count.
+- Fixed bosses that could be beaten from just outside their reach (Old Gnasher in Old Tom's Cellar, and others by a doorway). A boss that can't reach you now closes in, leaps beside you, or walks home and heals.
+- Fixed Tregear Vosper and Exciseman Hoskin standing far south of Polgarra Cove, so "Lights on the Mirefen" pointed to empty land.
+- Fixed Fisherman Col standing in open sand east of Pellow, with no hut where his quests said one was.
+- Fixed chat filling with "You carry all the Cellar Timber the carts need" on every press. You can now gather past what the carts need.
+`
+  },
+  {
     date: "2026-11-26",
     category: "Patch notes",
     title: "Quietside Keepers - Outfits, the Wreck Boat and Fixes",
