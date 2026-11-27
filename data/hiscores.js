@@ -1,10 +1,10 @@
 /* Mythwake hiscores - written by the game server (Server/src/Hiscores.cs). Do not edit by hand. */
 window.MYTHWAKE_HISCORES = {
-  updated: "2026-11-27 16:55 UTC",
+  updated: "2026-11-27 17:05 UTC",
   online: 1,
   players: [
     { name: "Vedder96", skills: [[20, 51701], [20, 48581], [23, 95661], [20, 48795], [22, 84131], [19, 44697], [18, 36385], [21, 64251], [15, 18384], [16, 23853], [18, 33994], [18, 32734], [12, 8094], [17, 28298]] },
-    { name: "Bay", skills: [[1, 36], [25, 124753], [20, 57601], [12, 8621], [21, 66878], [21, 69783], [12, 7417], [16, 23524], [24, 107108], [19, 45896], [11, 6172], [18, 35926], [22, 76098], [12, 7241]] },
+    { name: "Bay", skills: [[1, 36], [25, 124753], [20, 57690], [12, 8621], [21, 66907], [21, 69783], [12, 7445], [17, 27398], [24, 107704], [19, 45896], [11, 6172], [18, 35926], [22, 76098], [12, 7291]] },
     { name: "Erc", skills: [[11, 5647], [23, 96875], [9, 2657], [14, 14158], [19, 41727], [20, 51455], [16, 21641], [13, 12117], [17, 30423], [17, 29044], [16, 21797], [15, 17895], [5, 636], [12, 7032]] },
     { name: "Mckdank", skills: [[23, 94556], [10, 4022], [20, 49848], [22, 74509], [22, 77622], [15, 15751], [8, 1642], [16, 22842], [12, 7487], [13, 12046], [5, 658], [6, 837], [9, 2821], [14, 13829]] },
     { name: "Wizen", skills: [[1, 29], [1, 3], [16, 23145], [3, 192], [13, 11155], [6, 1031], [7, 1445], [5, 588], [7, 1565], [6, 855], [6, 764], [9, 2480], [5, 611], [5, 585]] },
@@ -43,7 +43,7 @@ window.MYTHWAKE_HISCORES = {
     { name: "SirKenneth", skills: [[1, 0], [1, 0], [1, 0], [1, 0], [10, 3525], [1, 0], [1, 0], [1, 0], [1, 0], [1, 0], [1, 0], [1, 0], [1, 0], [1, 0]] }
   ],
   guilds: [
-    { name: "Periphery", emblem: [4, 0, 24, 3], members: 2, total: 493 }
+    { name: "Periphery", emblem: [4, 0, 24, 3], members: 2, total: 494 }
   ],
   minigames: {
     duel_best_rung: [],
@@ -56,5 +56,5 @@ window.MYTHWAKE_HISCORES = {
     wreck_searches: [{ name: "Erc", score: 11 }, { name: "Bay", score: 1 }],
     caravans_escorted: []
   },
-  quests: [{ name: "Vedder96", score: 26 }, { name: "Erc", score: 20 }, { name: "Bay", score: 19 }, { name: "Mckdank", score: 14 }, { name: "Wizen", score: 12 }, { name: "JaiDGreat", score: 8 }, { name: "Seraaphik", score: 6 }, { name: "duu", score: 4 }, { name: "XenosVires", score: 3 }, { name: "Valeria", score: 3 }, { name: "SpllCst", score: 3 }, { name: "Chosen", score: 2 }, { name: "oligi", score: 1 }, { name: "strelly", score: 1 }]
+  quests: [{ name: "Vedder96", score: 26 }, { name: "Bay", score: 21 }, { name: "Erc", score: 20 }, { name: "Mckdank", score: 14 }, { name: "Wizen", score: 12 }, { name: "JaiDGreat", score: 8 }, { name: "Seraaphik", score: 6 }, { name: "duu", score: 4 }, { name: "XenosVires", score: 3 }, { name: "Valeria", score: 3 }, { name: "SpllCst", score: 3 }, { name: "Chosen", score: 2 }, { name: "oligi", score: 1 }, { name: "strelly", score: 1 }]
 };
