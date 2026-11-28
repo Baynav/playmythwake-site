@@ -54,34 +54,53 @@ Found something odd? Use Menu > Report a bug or tell us on the Discord.
   {
     date: "2026-11-27",
     category: "Patch notes",
-    title: "The Undermarket Rework and Quests on the Map",
+    title: "The Undermarket Rework, Wreck Salvage and Quests on the Map",
     published: "2026-11-27T17:41:28Z",
     body: `
-A quick update built from your reports and our own play-testing. The Undermarket plays the way it should: gathering keeps going, every station takes orders, and your streak is now yours to manage. Your active quests also show on the world map, every campfire cooks, and a handful of characters now stand where their quests say they are.
+A quick update built from your reports and our own play-testing. The Undermarket plays the way it should: gather and make as much as you like, every station takes orders, and your streak is now yours to manage. The Wreck at Low Water holds real salvage and the chance of a captain's strongbox, your active quests show on the world map, and every campfire cooks.
+
+**Updated later the same day:** our first update that downloads straight from the title screen, no store update needed. It brought the wreck's salvage, the Tide Charm and the Barnacled Tricorn, free making in the Undermarket, and monsters far below your level leaving you alone.
 
 Please update the game from the Microsoft Store or Google Play. Found something odd? Use Menu > Report a bug or tell us on the Discord.
 
 ## Highlights
+- **Real salvage at the wreck.** The Wreck at Low Water's crates now hold sailcloth, rigging, iron fittings, timbers, salt, potions, silver and scrolls, alongside coins, bait, salmon and pearls.
+- **The captain's strongbox.** Any search may turn it up (1 in 6): one bonus find, with a chance at the new **Tide Charm** and a rare chance at the **Barnacled Tricorn**.
 - **Your streak, your pace.** In the Undermarket, the streak now runs on the carts you load. Take on one cart at a time or juggle several: miss any cart you've loaded into and the streak is gone.
-- **Gathering keeps going.** One press at the Old Seam, the Rotten Beams or the Rag Pile keeps gathering. Collect as much as you like, whatever the carts want.
+- **Gather and make freely.** One press at the Old Seam, the Rotten Beams or the Rag Pile keeps gathering, and every good can be made at its station, whatever the carts want right now.
 - **Metal goods are back.** Carts now ask for Smuggler's Daggers and Strongbox Hinges from the Smuggler's Anvil, not just wood and cloth.
 - **Quests on the map.** The world map shows where each active quest wants you next.
 - **Cook at any campfire.** Every campfire in the world is now a cooking fire.
+- **Monsters far below you leave you alone.** If your combat level is more than double a monster's, it no longer attacks you on sight.
 
 ## New
+- **Tide Charm** (necklace): worn, fishing spots and the tide-line Foraging spots succeed 5% more often.
+- **Barnacled Tricorn**: a sea-stained hat crusted with barnacles. Defence 2, for any style.
 - **The world map marks your active quests**: the person to talk to, or the spot to use, for each quest's current step. Click a quest in the tracker or the quest log to see it on the map.
 - **Polgarra Cove** is named on the world map.
 - **41 campfires** across the world now work as cooking fires, with the same recipes, burn chances and XP as any other campfire.
+- **More tide-line Foraging spots** along the beaches by Polgarra Cove and the Pellow coast: Salt Pans and Seaweed Rocks 12 (was 6), Shellfish Beds, Sand-hopper Banks, Samphire Beds and Worm Casts 18 (was 12).
+- **Boatman Keverne rows any time**: from the Fogwrack strand to Polgarra Cove whenever you like, and to the wreck itself while it's uncovered.
 
 ## Improvements
 - **The Undermarket:**
   - **The streak** runs on the carts you load into, each on its own timer (was a single 150-second timer between carts). Carts you never touched don't count.
   - **Your streak carts are highlighted:** an amber rim and a "your streak" tag over the cart, turning red in its last 10 seconds. The panel shows how many carts you're on.
-  - **One press keeps gathering**, with the same time and XP for each item as before. Gather as much as you like: it stops only when a stack is full (16), your bag is full, or you move.
+  - **One press keeps gathering**, with the same time and XP for each item as before. Gather as much as you like: a full stack of 16 starts a new one, and it stops only when your bag is full or you move.
+  - **Every good can be made at its station**, whatever the carts want right now.
   - **Every good has its own colour**, so a cart's order matches the station's list at a glance: steel-blue daggers, violet hinges, red crate lids, golden staves, blue wraps and teal sacks. Seam Iron, Cellar Timber and Smuggler's Rags are recoloured too.
   - **Messages like "This cart wants..." show over your head** for a moment instead of in chat, and each is said once.
+- **Keverne's boat** starts out on the water at the boat, not on the sand, and its panel names him.
+- **Exciseman Hoskin** now keeps watch over Polgarra Cove from a post by the signal lanterns, instead of standing alone in the sand.
 - **The Shut House** quest says exactly where the chest and the house are.
 - **Fisherman Col** now stands by the Shore Cottages in Pellow, next to the Shut House his quest is about.
+- **Quest items** that went to your bank because your bag was full now come back to you.
+- **Seven quest items have proper icons**, including Davey's Knife, Doyle's Crate and the Shut House keys.
+
+## Balance
+- **Undermarket gathering** pays a fixed amount per item: Seam Iron 18, Cellar Timber 22, Smuggler's Rags 20 (was a share of your best gathering spot's XP, up to 50).
+- **Oak** 25 XP a log (was 28). **Driftwood** 28 (was 31).
+- **Sorrel, Salt Pans and Worm Casts** 20 XP (was 16).
 
 ## Fixes
 - Fixed carts never asking for metal goods. The Smuggler's Anvil was too far from Doyle's pad to count.
@@ -89,6 +108,9 @@ Please update the game from the Microsoft Store or Google Play. Found something 
 - Fixed Tregear Vosper and Exciseman Hoskin standing far south of Polgarra Cove, so "Lights on the Mirefen" pointed to empty land.
 - Fixed Fisherman Col standing in open sand east of Pellow, with no hut where his quests said one was.
 - Fixed chat filling with "You carry all the Cellar Timber the carts need" on every press. You can now gather past what the carts need.
+- Fixed Hermit Wenwyn taking your salt, berries and seaweed, then asking you to cook with them. He now just checks you have them.
+- Fixed monsters wandering on top of the Wreck at Low Water.
+- Fixed being able to attack from Keverne's boat. Attacking now calls the ride off, and your fare is refunded.
 `
   },
   {
