@@ -13,45 +13,6 @@
 
 window.MYTHWAKE_NEWS = [
   {
-    date: "2026-11-28",
-    category: "Patch notes",
-    title: "Salvage at the Wreck, Free Gathering and the Tide Charm",
-    published: "2026-11-28T00:41:41Z",
-    body: `
-Our first update that downloads straight from the title screen: no store update needed this time. The Wreck at Low Water now holds real salvage and the chance of a captain's strongbox, there's a new charm and a new hat to find, and the Undermarket lets you gather and make as much as you like.
-
-Found something odd? Use Menu > Report a bug or tell us on the Discord.
-
-## Highlights
-- **Real salvage at the wreck.** The Wreck at Low Water's crates now hold sailcloth, rigging, iron fittings, timbers, salt, potions, silver and scrolls, alongside coins, bait, salmon and pearls.
-- **The captain's strongbox.** Any search may turn it up (1 in 6): one bonus find, with a chance at the new **Tide Charm** and a rare chance at the **Barnacled Tricorn**.
-- **Gather and make freely in the Undermarket.** Collect as much as you like: a full stack of 16 starts a new one. Every good can be made at its station, whatever the carts want right now.
-- **Monsters far below you leave you alone.** If your combat level is more than double a monster's, it no longer attacks you on sight.
-
-## New
-- **Tide Charm** (necklace): worn, fishing spots and the tide-line Foraging spots succeed 5% more often.
-- **Barnacled Tricorn**: a sea-stained hat crusted with barnacles. Defence 2, for any style.
-- **More tide-line Foraging spots** along the beaches by Polgarra Cove and the Pellow coast: Salt Pans and Seaweed Rocks 12 (was 6), Shellfish Beds, Sand-hopper Banks, Samphire Beds and Worm Casts 18 (was 12).
-- **Boatman Keverne rows any time**: from the Fogwrack strand to Polgarra Cove whenever you like, and to the wreck itself while it's uncovered.
-
-## Improvements
-- **Keverne's boat** starts out on the water at the boat, not on the sand, and its panel names him.
-- **Exciseman Hoskin** now keeps watch over Polgarra Cove from a post by the signal lanterns, instead of standing alone in the sand.
-- **Quest items** that went to your bank because your bag was full now come back to you.
-- **Seven quest items have proper icons**, including Davey's Knife, Doyle's Crate and the Shut House keys.
-
-## Balance
-- **Undermarket gathering** pays a fixed amount per item: Seam Iron 18, Cellar Timber 22, Smuggler's Rags 20 (was a share of your best gathering spot's XP, up to 50).
-- **Oak** 25 XP a log (was 28). **Driftwood** 28 (was 31).
-- **Sorrel, Salt Pans and Worm Casts** 20 XP (was 16).
-
-## Fixes
-- Fixed Hermit Wenwyn taking your salt, berries and seaweed, then asking you to cook with them. He now just checks you have them.
-- Fixed monsters wandering on top of the Wreck at Low Water.
-- Fixed being able to attack from Keverne's boat. Attacking now calls the ride off, and your fare is refunded.
-`
-  },
-  {
     date: "2026-11-27",
     category: "Patch notes",
     title: "The Undermarket Rework, Wreck Salvage and Quests on the Map",

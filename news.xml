@@ -6,20 +6,12 @@
     <description>News and patch notes for Mythwake, an online 2D RPG.</description>
     <language>en</language>
     <atom:link href="https://playmythwake.com/news.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sat, 28 Nov 2026 00:41:41 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 17:41:28 +0000</lastBuildDate>
     <image>
       <url>https://playmythwake.com/img/apple-touch-icon.png</url>
       <title>Mythwake News</title>
       <link>https://playmythwake.com/news</link>
     </image>
-    <item>
-      <title>Salvage at the Wreck, Free Gathering and the Tide Charm</title>
-      <link>https://playmythwake.com/news#post-2026-11-28-salvage-at-the-wreck-free-gathering-and-the-tide-charm</link>
-      <guid isPermaLink="true">https://playmythwake.com/news#post-2026-11-28-salvage-at-the-wreck-free-gathering-and-the-tide-charm</guid>
-      <pubDate>Sat, 28 Nov 2026 00:41:41 +0000</pubDate>
-      <category>Patch notes</category>
-      <description>&lt;p&gt;Our first update that downloads straight from the title screen: no store update needed this time. The Wreck at Low Water now holds real salvage and the chance of a captain&amp;#39;s strongbox, there&amp;#39;s a new charm and a new hat to find, and the Undermarket lets you gather and make as much as you like.&lt;/p&gt;&lt;p&gt;Found something odd? Use Menu &amp;gt; Report a bug or tell us on the Discord.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Highlights&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Real salvage at the wreck.&lt;/strong&gt; The Wreck at Low Water&amp;#39;s crates now hold sailcloth, rigging, iron fittings, timbers, salt, potions, silver and scrolls, alongside coins, bait, salmon and pearls.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;The captain&amp;#39;s strongbox.&lt;/strong&gt; Any search may turn it up (1 in 6): one bonus find, with a chance at the new &lt;strong&gt;Tide Charm&lt;/strong&gt; and a rare chance at the &lt;strong&gt;Barnacled Tricorn&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Gather and make freely in the Undermarket.&lt;/strong&gt; Collect as much as you like: a full stack of 16 starts a new one. Every good can be made at its station, whatever the carts want right now.&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Monsters far below you leave you alone.&lt;/strong&gt; If your combat level is more than double a monster&amp;#39;s, it no longer attacks you on sight.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href="https://playmythwake.com/news#post-2026-11-28-salvage-at-the-wreck-free-gathering-and-the-tide-charm"&gt;Read the full notes&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
     <item>
       <title>The Undermarket Rework, Wreck Salvage and Quests on the Map</title>
       <link>https://playmythwake.com/news#post-2026-11-27-the-undermarket-rework-wreck-salvage-and-quests-on-the-map</link>
